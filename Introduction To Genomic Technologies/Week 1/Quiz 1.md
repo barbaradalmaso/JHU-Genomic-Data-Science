@@ -62,29 +62,39 @@ Answer: Tyrosine
 
 # Question 7
 Transcription is a process that converts DNA to
+* genes
+* any other molecule
+* RNA
+* polymerases
+```
+Answer: RNA
+```
 
-genes
-any other molecule
-**RNA**
-polymerases
+# Question 8
+The cost to sequence a human genome today, in U.S. dollars, is approximately
+* $30 million
+* None of these options
+* $1000
+* $20,000
+```
+Answer: $1000
+```
 
-8. The cost to sequence a human genome today, in U.S. dollars, is approximately
+# Question 9
+DNA encodes instructions for
+* Producing all the proteins that a person requires for life
+* Helping us digest food
+* Enveloping viruses that infect a cell
+* Regulating body temperature
+```
+Answer: Producing all the proteins that a person requires for life
+```
 
-$30 million
-None of these options
-**$1000**
-$20,000
-
-9. DNA encodes instructions for
-
-**Producing all the proteins that a person requires for life**
-Helping us digest food
-Enveloping viruses that infect a cell
-Regulating body temperature
-
-10. One major difference between humans and bacteria is
-
-**Human cells contain separate organelles called mitochondria, and bacterial cells do not.**
-The human genome is made of DNA, while bacteria are made of RNA.
-Human genes are first transcribed to RNA, while bacterial genes are not.
-Human proteins are made of combinations of 20 amino acids, while bacterial proteins use a smaller set of 12 amino acids.
+# Question 10
+One major difference between humans and bacteria is
+* Human cells contain separate organelles called mitochondria, and bacterial cells do not
+* The human genome is made of DNA, while bacteria are made of RNA
+* Human genes are first transcribed to RNA, while bacterial genes are not
+* Human proteins are made of combinations of 20 amino acids, while bacterial proteins use a smaller set of 12 amino acids
+```
+Answer: Human cells contain separate organelles called mitochondria, and bacterial cells do not.**Human cells contain separate organelles called mitochondria, and bacterial cells do not.
