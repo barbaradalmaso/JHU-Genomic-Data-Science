@@ -1,6 +1,6 @@
-## Genomic Data Science Specialization Coursera
+# Genomic Data Science Specialization Coursera
 
-# About this Specialization
+## About this Specialization
 
 With genomics sparks a revolution in medical discoveries, it becomes imperative to be able to better understand the genome, and be able to leverage the data and information from genomic datasets. Genomic Data Science is the field that applies statistics and data science to the genome.
 
