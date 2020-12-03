@@ -3,7 +3,7 @@
 ```
 1. The central dogma of molecular biology tells us that information is passed from
 
-** DNA to RNA to protein ** 
+__DNA to RNA to protein__
 RNA to DNA to protein
 DNA to methylation to RNA to protein
 DNA to RNA to methylation to protein
