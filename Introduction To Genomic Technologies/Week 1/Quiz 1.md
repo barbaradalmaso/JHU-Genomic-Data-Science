@@ -97,4 +97,4 @@ One major difference between humans and bacteria is
 * Human genes are first transcribed to RNA, while bacterial genes are not
 * Human proteins are made of combinations of 20 amino acids, while bacterial proteins use a smaller set of 12 amino acids
 ```
-Answer: Human cells contain separate organelles called mitochondria, and bacterial cells do not.**Human cells contain separate organelles called mitochondria, and bacterial cells do not.
+Answer: Human cells contain separate organelles called mitochondria, and bacterial cells do not
