@@ -2,16 +2,15 @@
 
 # Question 1
 The central dogma of molecular biology tells us that information is passed from
-
 * DNA to RNA to protein
 * RNA to DNA to protein
 * DNA to methylation to RNA to protein
 * DNA to RNA to methylation to protein
-
 ```
 Answer: DNA to RNA to protein
+```
 
-
+# Question 2
 2. Which of the following is one of the major drivers of the sequencing revolution that began after 2008?
 
 Decreased computational analysis time
