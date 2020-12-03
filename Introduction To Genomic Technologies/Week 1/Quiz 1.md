@@ -1,12 +1,15 @@
-## Quiz 1: Overview and Molecular Biology
+# Quiz 1: Overview and Molecular Biology
 
+# Question 1
+The central dogma of molecular biology tells us that information is passed from
 
-1. The central dogma of molecular biology tells us that information is passed from
+* DNA to RNA to protein
+* RNA to DNA to protein
+* DNA to methylation to RNA to protein
+* DNA to RNA to methylation to protein
 
-**DNA to RNA to protein**
-RNA to DNA to protein
-DNA to methylation to RNA to protein
-DNA to RNA to methylation to protein
+```
+Answer: DNA to RNA to protein
 
 
 2. Which of the following is one of the major drivers of the sequencing revolution that began after 2008?
