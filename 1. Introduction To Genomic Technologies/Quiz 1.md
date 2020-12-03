@@ -1,6 +1,6 @@
 # Quiz 1: Overview and Molecular Biology
 
-# Question 1
+## Question 1
 The central dogma of molecular biology tells us that information is passed from
 * DNA to RNA to protein
 * RNA to DNA to protein
@@ -10,7 +10,7 @@ The central dogma of molecular biology tells us that information is passed from
 Answer: DNA to RNA to protein
 ```
 
-# Question 2
+## Question 2
 Which of the following is one of the major drivers of the sequencing revolution that began after 2008?
 * Decreased computational analysis time
 * Improved Sanger sequencing
@@ -30,7 +30,7 @@ Which of the following is an exclusive characteristic of genomics compared to tr
 Answer: Studies considering the entire genome
 ```
 
-# Question 4
+## Question 4
 Genomic data science involves techniques from which of these disciplines?
 * Computer Science
 * Molecular Biology
@@ -40,7 +40,7 @@ Genomic data science involves techniques from which of these disciplines?
 Answer: All of the these options
 ```
 
-# Question 5
+## Question 5
 Which of the following is an activity that genomic data scientists do not perform?
 * Sample collection
 * Population genomics
@@ -50,7 +50,7 @@ Which of the following is an activity that genomic data scientists do not perfor
 Answer: Sample collection
 ```
 
-# Question 6
+## Question 6
 Which of these is not one of the DNA nucleic acids?
 * Tyrosine
 * Thymine
@@ -60,7 +60,7 @@ Which of these is not one of the DNA nucleic acids?
 Answer: Tyrosine
 ```
 
-# Question 7
+## Question 7
 Transcription is a process that converts DNA to
 * genes
 * any other molecule
@@ -70,7 +70,7 @@ Transcription is a process that converts DNA to
 Answer: RNA
 ```
 
-# Question 8
+## Question 8
 The cost to sequence a human genome today, in U.S. dollars, is approximately
 * $30 million
 * None of these options
@@ -80,7 +80,7 @@ The cost to sequence a human genome today, in U.S. dollars, is approximately
 Answer: $1000
 ```
 
-# Question 9
+## Question 9
 DNA encodes instructions for
 * Producing all the proteins that a person requires for life
 * Helping us digest food
@@ -90,7 +90,7 @@ DNA encodes instructions for
 Answer: Producing all the proteins that a person requires for life
 ```
 
-# Question 10
+## Question 10
 One major difference between humans and bacteria is
 * Human cells contain separate organelles called mitochondria, and bacterial cells do not
 * The human genome is made of DNA, while bacteria are made of RNA
