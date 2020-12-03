@@ -1,4 +1,4 @@
-# Genomic Data Science Specialization Coursera
+# JHU Genomic Data Science Specialization at *Coursera*
 
 ## About this Specialization
 
