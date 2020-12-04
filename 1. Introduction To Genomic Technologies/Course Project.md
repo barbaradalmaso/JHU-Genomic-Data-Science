@@ -63,17 +63,17 @@ Answer: 5
 ## Question 7
 What are the biological, computational, and statistical parts of Figure 1?
 * **Biological**: the argument that a Blast cutoff of 10^-10 should define homologs
-  **Computational**: The plotting of number of genomes versus number of genes in common
-  **Statistical**: Observing and quantifying the trend in genes shared versus genome sample size.
+**Computational**: The plotting of number of genomes versus number of genes in common
+**Statistical**: Observing and quantifying the trend in genes shared versus genome sample size.
 * **Biological**: the argument that gene should be ruled out if there is a human/nonvertebrate eukaryote homologs.
-  **Computationa**l: Observing and quantifying the trend in genes shared versus genome sample size.
-  **Statistical**: The identification of homologs by performing Blastp searches on known protein sets.
+**Computationa**l: Observing and quantifying the trend in genes shared versus genome sample size.
+**Statistical**: The identification of homologs by performing Blastp searches on known protein sets.
 * **Biological**: the argument that lateral transfer should be ruled out if there is a human/nonvertebrate eukaryote homologs.
-  **Computational**: The identification of homologs by performing Blastp searches on known protein sets.
-  **Statistical**: Observing and quantifying the trend in genes shared versus genome sample size.
+**Computational**: The identification of homologs by performing Blastp searches on known protein sets.
+**Statistical**: Observing and quantifying the trend in genes shared versus genome sample size.
 * **Biological**: the argument that lateral transfer should be ruled out if there is a human/nonvertebrate eukaryote homologs.
-  **Computational**: the plotting of number of genomes versus number of genes in common
-  **Statistical**: Observing and quantifying the trend in genes shared versus genome sample size.
+**Computational**: the plotting of number of genomes versus number of genes in common
+**Statistical**: Observing and quantifying the trend in genes shared versus genome sample size.
 ```
 Answer: 0 
 ```
@@ -81,17 +81,17 @@ Answer: 0
 ## Question 8
 What are the biological, computational, and statistical parts of Figure 2?
 * **Biological**: the argument that proteins should have more similar sequences if they are evolutionarily closer.
-  **Computational**: The identification of homologs of human HAS genes by iterative BlastP searches and application of the neighbor-joining algorithm to create the phylogenetic tree.
-  **Statistical**: The statistical modeling of protein sequences via a Markov Model.
+**Computational**: The identification of homologs of human HAS genes by iterative BlastP searches and application of the neighbor-joining algorithm to create the phylogenetic tree.
+**Statistical**: The statistical modeling of protein sequences via a Markov Model.
 * **Biological**: the argument that lateral gene transfer is less common than standard gene flow through reproduction
-  **Computational**: The identification of homologs of human HAS genes by iterative BlastP searches and application of the neighbor-joining algorithm to create the phylogenetic tree.
-  **Statistical**: The inference that humans cluster more closely (have smaller distances to) other eukaryotes than to bacteria.
+**Computational**: The identification of homologs of human HAS genes by iterative BlastP searches and application of the neighbor-joining algorithm to create the phylogenetic tree.
+**Statistical**: The inference that humans cluster more closely (have smaller distances to) other eukaryotes than to bacteria.
 * **Biological**l: the argument that proteins should have more similar sequences if they are evolutionarily closer.
-  **Computational**: The identification of homologs of human HAS genes by iterative BlastP searches and application of the neighbor-joining algorithm to create the phylogenetic tree.
-  **Statistical**: The inference that humans cluster more closely (have smaller distances to) other eukaryotes than to bacteria.
+**Computational**: The identification of homologs of human HAS genes by iterative BlastP searches and application of the neighbor-joining algorithm to create the phylogenetic tree.
+**Statistical**: The inference that humans cluster more closely (have smaller distances to) other eukaryotes than to bacteria.
 * **Biological**: the argument that lateral gene transfer is less common than standard gene flow through reproduction
-  **Computational**: The storage of data in a low redundancy protein database.
-  **Statistical**: The inference that humans cluster more closely (have smaller distances to) other eukaryotes than to bacteria.
+**Computational**: The storage of data in a low redundancy protein database.
+**Statistical**: The inference that humans cluster more closely (have smaller distances to) other eukaryotes than to bacteria.
 ```
 Answer:  Batch effects
 ```
