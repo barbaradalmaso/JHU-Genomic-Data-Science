@@ -37,7 +37,7 @@ What are homologs?
 * Genes that perform similar biochemical functions but have different sequences.
 * Genes that have evolved to have the same function but different sequences.
 ```
-Answer: Genes that perform similar biochemical functions but have different sequences.
+Answer: Two copies of a gene in different organisms that share a common ancestor.
 ```
 
 ## Question 5
