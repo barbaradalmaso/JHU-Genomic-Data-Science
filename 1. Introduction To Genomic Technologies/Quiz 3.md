@@ -7,100 +7,97 @@ A computer algorithm is
 * A protocol for transmitting data over a network
 * A precise specification of all the steps needed to compute a solution to a problem
 ```
-Answer: The process whereby a cell copies its DNA
+Answer: A precise specification of all the steps needed to compute a solution to a problem
 ```
 
 ## Question 2
-Which of the following is not true about DNA?
-* It is a double­stranded molecule
-* It doesn’t matter which direction you write the sequence in
-* Each strand has a direction
-* One strand is complementary to the other
+You can make a program more efficient by
+* Re-designing the algorithm to require fewer steps
+* Recompiling it on a different computer
+* Running it on the Amazon cloud
+* Replacing your hard drives with faster solid state drives
 ```
-Answer: It doesn’t matter which direction you write the sequence in
+Answer: Re-designing the algorithm to require fewer steps
 ```
 
 ## Question 3
-RNA molecules are translated into
-* Proteins
-* Exons
-* Modified RNA molecules
-* Introns
+DNA sequences can be represented efficiently using
+* The SAM alignment format
+* Two bits for each of the 4 possible bases
+* One codon for each amino acid
+* One byte for each of the 4 possible bases
 ```
-Answer: Proteins
+Answer: Two bits for each of the 4 possible bases
 ```
 
 ## Question 4
-Messenger RNA is
-* A template from which proteins are constructed by ribosomes
-* A special signal that helps a cell communicate with other cells
-* A reverse copy of DNA
-* The genetic material inherited by offspring
+A programming language is
+* A formal language used to instruct computers what to do
+* A web-based environment for building computer programs
+* Anything written in Python
+* A method for translating between languages such as English and French
 ```
-Answer: A template from which proteins are constructed by ribosomes
+Answer: A formal language used to instruct computers what to do
 ```
 
 ## Question 5
-DNA is copied into DNA in order to
-* Replicate a cell
-* Fix errors in the DNA sequence
-* Respond to an infection
-* Create species diversity
+Software engineering involves
+* All of these options
+* Updating code so that it remains compatible with other software systems.
+* Testing programs on a wide range of examples to see if they perform as expected
+* Debugging computer code
 ```
-Answer: Replicate a cell
+Answer: All of these options
 ```
 
 ## Question 6
-Evolutionary biology involves the study of
-* The process of natural selection that allows some DNA mutations to survive and cause others to die out
-* The process through which RNA is exported from the nucleus
-* The origin of the very first living organisms
-* The purpose of life on earth
+Bowtie, TopHat, and Cufflinks are
+* A suite of software tools for alignment and analysis of next-generation sequence data
+* A web-based system for browsing genome data
+* Programs for determining the function of a gene
+* Elements of men’s formal evening wear
 ```
-Answer: The process of natural selection that allows some DNA mutations to survive and cause others to die out
+Answer: A suite of software tools for alignment and analysis of next-generation sequence data
 ```
 
 
 ## Question 7
-Which of the following can we measure with next generation sequencing?
-* DNA­-protein binding
-* Cell structure
-* Protein levels
-* RNA secondary structure
+Sequence alignment refers to
+* Lining up two DNA sequences so that positions with the same base match one another
+* Making sure that all the DNA sequences in a file use the same format
+* Shuffling the positions in a sequence to randomize them
+* Determining the amino acid sequence produced by translating a DNA sequence
 ```
-Answer: DNA­-protein binding
+Answer: Lining up two DNA sequences so that positions with the same base match one another
 ```
 
 
 ## Question 8
-What is the first step in ChIP­-sequencing to measure protein­-DNA binding?
-* Cross-­linking proteins to the DNA
-* Sequencing the bound DNA fragments
-* Sequencing the DNA molecules
-* Antibody pulldown of the linked protein­DNA fragments
+A software pipeline for RNA sequence (RNA-seq) analysis will
+* Process large raw sequence files into a summary table showing which genes were present
+* Create a database in which one can efficiently store and retrieve results
+* Compare cases to controls and determine which genes were responsible for any differences in phenotype
+* Evaluate the best RNA-seq protocol for minimizing sequencing artifacts
 ```
-Answer: Cross-­linking proteins to the DNA
+Answer:  Process large raw sequence files into a summary table showing which genes were present
 ```
 
 ## Question 9
-Which of the following can be measured using bisulfite conversion and then sequencing?
-* DNA variants
-* DNA methylation
-* DNA­-protein binding
-* DNA secondary structure
+Which of the following is not a computer operating system?
+* Google Drive
+* RedHat Linux
+* Unix
+* Mac OS X
 ```
-Answer: DNA methylation
+Answer: Google Drive
 ```
-
 
 ## Question 10
-What is the primary measurement technology used in most modern genomics experiments?
-* Oligonucleotide arrays
-* Next generation sequencing
-* Western blotting
-* Polymerase chain reaction
-* Sanger sequencing
-* Nanopore sequencing
+A data set large enough to overwhelm the main memory of a computer would
+* Be larger than the available RAM
+* Contain more than one genome’s worth of data
+* Use uncompressed files rather than compressed ones
+* Be at least 100 gigabytes in size
 ```
-Answer: Next generation sequencing
+Answer: Be larger than the available RAM
 ```
