@@ -7,17 +7,17 @@ Which of the following are required for sharing a data set?
 * The raw data
 * All of these options
 ```
-Answer: All of these options
+Answer: All of these options 
 ```
 
 ## Question 2
 Which of the following should be included in data tidying recipes?
 * Pre­processed data
 * Units of variables
-* Version numbers for software
+* Explicit step-by-step instructions
 * Power calculations
 ```
-Answer: Pre­processed data
+Answer: Explicit step-by-step instructions
 ```
 
 ## Question 3
@@ -37,7 +37,7 @@ Which of the following are types of variability in all genomic data?
 * Variation from changing technology
 * Variability due to dropout
 ```
-Answer: * Genetic drift
+Answer: * Phenotypic variability
 ```
 
 ## Question 5
@@ -47,7 +47,7 @@ Which of the following will increase power in a statistical analysis?
 * Adjusting for confounders
 * Increasing measurement variation
 ```
-Answer: Adjusting for confounders
+Answer: Increasing sample size
 ```
 
 ## Question 6
@@ -68,9 +68,8 @@ If we report 500 results as significant out of 10,000 tests while controlling th
 * 500
 * 0
 ```
-Answer: 5
+Answer: 0 
 ```
-
 
 ## Question 8
 What is the most common confounder in genomics?
@@ -79,17 +78,17 @@ What is the most common confounder in genomics?
 * Batch effects
 * Genetic background
 ```
-Answer:  Population stratification
+Answer:  Batch effects
 ```
 
 ## Question 9
 Which of the following can be used to address potential confounders at the experimental design stage?
-* Blocking
-* Improved technology
-* Increasing sample size
+* Randomization
 * Measuring DNA instead of RNA
+* Multiple testing correction
+* Using linear models
 ```
-Answer: Increasing sample size
+Answer: Randomization
 ```
 
 ## Question 10
