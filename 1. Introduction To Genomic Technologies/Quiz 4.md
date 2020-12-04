@@ -11,93 +11,93 @@ Answer: All of these options
 ```
 
 ## Question 2
-You can make a program more efficient by
-* Re-designing the algorithm to require fewer steps
-* Recompiling it on a different computer
-* Running it on the Amazon cloud
-* Replacing your hard drives with faster solid state drives
+Which of the following should be included in data tidying recipes?
+* Pre­processed data
+* Units of variables
+* Version numbers for software
+* Power calculations
 ```
-Answer: Re-designing the algorithm to require fewer steps
+Answer: Pre­processed data
 ```
 
 ## Question 3
-DNA sequences can be represented efficiently using
-* The SAM alignment format
-* Two bits for each of the 4 possible bases
-* One codon for each amino acid
-* One byte for each of the 4 possible bases
+What is the central dogma of statistics?
+* Using measurements on a probabilistically selected sample to infer knowledge about a population
+* Using Bayes rule to calculate probabilities we care about
+* Estimating parameters using frequencies of observed events
+* Using measurements on a population to infer knowledge about a sample
 ```
-Answer: Two bits for each of the 4 possible bases
+Answer: Using measurements on a probabilistically selected sample to infer knowledge about a population
 ```
 
 ## Question 4
-A programming language is
-* A formal language used to instruct computers what to do
-* A web-based environment for building computer programs
-* Anything written in Python
-* A method for translating between languages such as English and French
+Which of the following are types of variability in all genomic data?
+* Phenotypic variability
+* Genetic drift
+* Variation from changing technology
+* Variability due to dropout
 ```
-Answer: A formal language used to instruct computers what to do
+Answer: * Genetic drift
 ```
 
 ## Question 5
-Software engineering involves
-* All of these options
-* Updating code so that it remains compatible with other software systems.
-* Testing programs on a wide range of examples to see if they perform as expected
-* Debugging computer code
+Which of the following will increase power in a statistical analysis?
+* Increasing sample size
+* Using a new technology
+* Adjusting for confounders
+* Increasing measurement variation
 ```
-Answer: All of these options
+Answer: Adjusting for confounders
 ```
 
 ## Question 6
-Bowtie, TopHat, and Cufflinks are
-* A suite of software tools for alignment and analysis of next-generation sequence data
-* A web-based system for browsing genome data
-* Programs for determining the function of a gene
-* Elements of men’s formal evening wear
+If 100 p­-values are calculated on a data set with no signal, how many p-­values would we expect to be less than 0.05 on average?
+* 10
+* 100
+* 5
+* 20
 ```
-Answer: A suite of software tools for alignment and analysis of next-generation sequence data
+Answer: 5
 ```
 
 
 ## Question 7
-Sequence alignment refers to
-* Lining up two DNA sequences so that positions with the same base match one another
-* Making sure that all the DNA sequences in a file use the same format
-* Shuffling the positions in a sequence to randomize them
-* Determining the amino acid sequence produced by translating a DNA sequence
+If we report 500 results as significant out of 10,000 tests while controlling the family-­wise error rate at 5%, about how many false positives do we expect?
+* 5
+* 200
+* 500
+* 0
 ```
-Answer: Lining up two DNA sequences so that positions with the same base match one another
+Answer: 5
 ```
 
 
 ## Question 8
-A software pipeline for RNA sequence (RNA-seq) analysis will
-* Process large raw sequence files into a summary table showing which genes were present
-* Create a database in which one can efficiently store and retrieve results
-* Compare cases to controls and determine which genes were responsible for any differences in phenotype
-* Evaluate the best RNA-seq protocol for minimizing sequencing artifacts
+What is the most common confounder in genomics?
+* Population stratification
+* Sex
+* Batch effects
+* Genetic background
 ```
-Answer:  Process large raw sequence files into a summary table showing which genes were present
+Answer:  Population stratification
 ```
 
 ## Question 9
-Which of the following is not a computer operating system?
-* Google Drive
-* RedHat Linux
-* Unix
-* Mac OS X
+Which of the following can be used to address potential confounders at the experimental design stage?
+* Blocking
+* Improved technology
+* Increasing sample size
+* Measuring DNA instead of RNA
 ```
-Answer: Google Drive
+Answer: Increasing sample size
 ```
 
 ## Question 10
-A data set large enough to overwhelm the main memory of a computer would
-* Be larger than the available RAM
-* Contain more than one genome’s worth of data
-* Use uncompressed files rather than compressed ones
-* Be at least 100 gigabytes in size
+Which of the following are benefits of making big data as small as possible as soon as possible?
+* Interactive analysis can improve our ability to make discoveries
+* Reduced data will increase the power of statistical tests
+* Smaller data sets will decrease false discovery rates
+* Reducing the data will reduce the number of hypothesis tests
 ```
-Answer: Be larger than the available RAM
+Answer: Interactive analysis can improve our ability to make discoveries
 ```
