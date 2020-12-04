@@ -5,10 +5,10 @@
 Genome assembly refers to
 * The process whereby a cell copies its DNA
 * A computational method for reconstructing chromosomes from short reads
-* A computational method to identify the genes being expressed in a cell or tissue
 * A computational process to translate high level code into machine level instructions
+* A computational method to identify the genes being expressed in a cell or tissue
 ```
-Answer: A computational method for reconstructing chromosomes from short reads
+Answer: The process whereby a cell copies its DNA
 ```
 
 ## Question 2
