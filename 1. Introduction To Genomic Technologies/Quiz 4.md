@@ -37,7 +37,7 @@ Which of the following are types of variability in all genomic data?
 * Variation from changing technology
 * Variability due to dropout
 ```
-Answer: * Phenotypic variability
+Answer: Phenotypic variability
 ```
 
 ## Question 5
