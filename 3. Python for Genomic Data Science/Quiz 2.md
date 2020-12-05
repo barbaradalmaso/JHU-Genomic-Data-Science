@@ -23,37 +23,49 @@ What will be the result of typing the following at the Python interpreter prompt
 * ' '
 * 'ACGT'
 ```
-Answer: It can be read and interpreted by the computer.
+Answer: an error message
 ```
 
 ## Question 3
-Which feature is not true about Python?
-* It is simple to use
-* It is portable across platforms
-* It is a compiled language
-* It is a scalable language
+The following commands are entered at the prompt of Python interpreter.
+```python
+>>> dna="atgctggggact"
+>>> dna[:3]
+>>> dna
 ```
-Answer: It is a compiled language
+* 'ctggggact'
+* 'atg'
+* 'atgctggggact'
+* 'atgc'
+```
+Answer: 'atgctggggact'
 ```
 
 ## Question 4
-Which of the following might be considered necessary to increase reproducibility in modern analysis?
-* All of these options
-* Provide access to the primary data
-* Record versions and parameters used in the analysis
-* Computation should be considered an integral part of biomedical research and its methods recorded
+What is the output of
+```python
+'dna'+1+2+3
 ```
-Answer: All of these options
+* Error
+* dna
+* dna123
+* dna6
+```
+Answer: Error
 ```
 
 ## Question 5
-Is this challenge surmountable?
-* Yes, but only by hiring a trained bioinformatician because this is all too hard for biologists
-* No, the data is too large for modern systems to record
-* No but reproducibility in science is a secondary concern anyway
-* Yes, modern software platforms (including Galaxy) were created to help researchers meet these challenges
+Given a string variable called dna, for instance:
+```python
+>>> dna='agcagttagcta'
 ```
-Answer: Yes, modern software platforms (including Galaxy) were created to help researchers meet these challenges
+What is a correct way to count the number of occurrences of 'ag' in dna:
+dna.count('ag')
+count(dna,'a')+count(dna,'g')
+count(dna,'ag')+count(dna,'AG')
+count(dna,'ag')
+```
+Answer: dna.count('ag')
 ```
 
 ## Question 6
