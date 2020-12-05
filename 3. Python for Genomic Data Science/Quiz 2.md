@@ -131,10 +131,10 @@ What are the types of the following literals, in order?
 ```python
 1, 1., 1.0, 1e10, 0x12, "1", "1.0", 100000000000000000, 100000000000000000.0
 ```
-int, no type (error), float, float, hex, string, string, int, float
-int, float, float, float, int, str, str, int, float
-int, float, float, float, hex, int, float, int, float
-int, no type (error), float, double, int, string, string, long, double
+* int, no type (error), float, float, hex, string, string, int, float
+* int, float, float, float, int, str, str, int, float
+* int, float, float, float, hex, int, float, int, float
+* int, no type (error), float, double, int, string, string, long, double
 ```
 Answer: int, no type (error), float, float, hex, string, string, int, float
 ```
