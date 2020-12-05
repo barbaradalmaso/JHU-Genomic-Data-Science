@@ -92,8 +92,7 @@ GGCAGATTCCCCCTAGACODE
 ```
 Select the correct way to display this output in Python 3.xx:
 * print("""\
-  >HSBGPG Human bone gla gene\transcript "BGP"
-  GGCAGATTCCCCCTAGA
+  >HSBGPG Human bone gla gene\transcript "BGP" GGCAGATTCCCCCTAGA
   """)
 * print('>HSBGPG Human bone gla gene\\transcript "BGP"\nGGCAGATTCCCCCTAGA')
 * print('>HSBGPG Human bone gla gene\transcript "BGP"
