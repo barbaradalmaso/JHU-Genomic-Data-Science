@@ -131,7 +131,7 @@ What are the types of the following literals, in order?
 ```python
 1, 1., 1.0, 1e10, 0x12, "1", "1.0", 100000000000000000, 100000000000000000.0
 ```
-* int, no type (error), float, float, hex, string, string, int, float XXXX
+* int, no type (error), float, float, hex, string, string, int, float
 * int, float, float, float, int, str, str, int, float
 * int, float, float, float, hex, int, float, int, float
 * int, no type (error), float, double, int, string, string, long, double
@@ -159,13 +159,13 @@ val = 1234567
 
 val = 1.234567 * 10 ** 6
 ```
-* In the first expression val is of type int, in the second val is of type float. Numerical values are different. XXXX
+* In the first expression val is of type int, in the second val is of type float. Numerical values are different. 
 * In the first expression val is of type int, in the second val is of type float. Numerical value is the same.
 * The two values are not equal.
 * No difference.
 * The value of the variable val in the first expression is different from the value of the variable val in the second expression.
 ```
-Answer: The value of the variable val in the first expression is different from the value of the variable val in the second expression.
+Answer: In the first expression val is of type int, in the second val is of type float. Numerical value is the same.
 ```
 
 # Question 12
