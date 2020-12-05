@@ -70,13 +70,18 @@ Answer: dna.count('ag')
 ```
 
 ## Question 6
-Galaxy is available as:
-* As a Microsoft Surface App that is free
-* As a website that is free for everyone to use
-* As a complimentary service available to anyone with a subscription to Nature
-* As a desktop application for around ~$99
+What is the value of the variable seqlen, after the following code is entered in Python:
+```python
+>>> seqlen = '10bp'
+>>> seqlen='2'+seqlen
+>>> seqlen=seqlen*2
 ```
-Answer: As a website that is free for everyone to use
+* '1010bp'
+* '12bp12bp'
+* '10bp'
+* '210bp210bp'
+```
+Answer: '210bp210bp'
 ```
 
 ## Question 7
