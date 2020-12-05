@@ -5,7 +5,7 @@ What is the result of the following operation in Python: 17/2 ?
 * 8.0
 * 8.5
 ```
-Answer: 8.5
+Answer: 8 or 8.5, depending on the Python version
 ```
 
 ## Question 2
@@ -118,12 +118,12 @@ C.
 >>> dna.find('atg',dna.find('atg')+1) 
 ```
 Which of these ways is correct:
-* A or C
+* **A or C
 * B
 * A
 * None of these
 ```
-Answer: B
+Answer: None of these
 ```
 
 ## Question 9
@@ -131,12 +131,12 @@ What are the types of the following literals, in order?
 ```python
 1, 1., 1.0, 1e10, 0x12, "1", "1.0", 100000000000000000, 100000000000000000.0
 ```
-* int, no type (error), float, float, hex, string, string, int, float
+* int, no type (error), float, float, hex, string, string, int, float XXXX
 * int, float, float, float, int, str, str, int, float
 * int, float, float, float, hex, int, float, int, float
 * int, no type (error), float, double, int, string, string, long, double
 ```
-Answer: int, no type (error), float, float, hex, string, string, int, float
+Answer: int, no type (error), float, double, int, string, string, long, double
 ```
 
 ## Question 10
@@ -159,13 +159,13 @@ val = 1234567
 
 val = 1.234567 * 10 ** 6
 ```
-* In the first expression val is of type int, in the second val is of type float. Numerical values are different.
+* In the first expression val is of type int, in the second val is of type float. Numerical values are different. XXXX
 * In the first expression val is of type int, in the second val is of type float. Numerical value is the same.
 * The two values are not equal.
 * No difference.
 * The value of the variable val in the first expression is different from the value of the variable val in the second expression.
 ```
-Answer: In the first expression val is of type int, in the second val is of type float. Numerical values are different.
+Answer: The value of the variable val in the first expression is different from the value of the variable val in the second expression.
 ```
 
 # Question 12
