@@ -33,6 +33,7 @@ The following commands are entered at the prompt of Python interpreter.
 >>> dna[:3]
 >>> dna
 ```
+What will be the output of the last command?
 * 'ctggggact'
 * 'atg'
 * 'atgctggggact'
@@ -60,10 +61,10 @@ Given a string variable called dna, for instance:
 >>> dna='agcagttagcta'
 ```
 What is a correct way to count the number of occurrences of 'ag' in dna:
-dna.count('ag')
-count(dna,'a')+count(dna,'g')
-count(dna,'ag')+count(dna,'AG')
-count(dna,'ag')
+* dna.count('ag')
+* count(dna,'a')+count(dna,'g')
+* count(dna,'ag')+count(dna,'AG')
+* count(dna,'ag')
 ```
 Answer: dna.count('ag')
 ```
