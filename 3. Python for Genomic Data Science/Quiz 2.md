@@ -118,12 +118,12 @@ C.
 >>> dna.find('atg',dna.find('atg')+1) 
 ```
 Which of these ways is correct:
-* **A or C
+* A or C
 * B
 * A
 * None of these
 ```
-Answer: None of these
+Answer: A or C
 ```
 
 ## Question 9
@@ -136,7 +136,7 @@ What are the types of the following literals, in order?
 * int, float, float, float, hex, int, float, int, float
 * int, no type (error), float, double, int, string, string, long, double
 ```
-Answer: int, no type (error), float, double, int, string, string, long, double
+Answer: int, float, float, float, int, str, str, int, float
 ```
 
 ## Question 10
