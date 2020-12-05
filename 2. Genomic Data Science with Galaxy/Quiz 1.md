@@ -99,3 +99,13 @@ For analysis where usegalaxy.org does not provide appropriate computation power 
 ```
 Answer: All of these options
 ```
+
+## Question 11
+Galaxy...
+* Cannot be used by anyone else to start a server
+* Can run as a server on Windows
+* Is highly configurable for many types of compute infrastructure
+* Can only work on one cluster system
+```
+Answer: Is highly configurable for many types of compute infrastructure
+```
