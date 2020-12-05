@@ -95,7 +95,7 @@ What are the biological, computational, and statistical parts of Figure 2?
 **Computational**: The storage of data in a low redundancy protein database.
 **Statistical**: The inference that humans cluster more closely (have smaller distances to) other eukaryotes than to bacteria.
 ```
-Answer:* Biological: the argument that proteins should have more similar sequences if they are evolutionarily closer.
+Answer: Biological: the argument that proteins should have more similar sequences if they are evolutionarily closer.
 Computational: The identification of homologs of human HAS genes by iterative BlastP searches and application of the neighbor-joining algorithm to create the phylogenetic tree.
 Statistical: The statistical modeling of protein sequences via a Markov Model.
 ```
