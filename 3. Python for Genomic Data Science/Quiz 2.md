@@ -104,13 +104,29 @@ Answer: print('>HSBGPG Human bone gla gene\\transcript "BGP"\nGGCAGATTCCCCCTAGA'
 ```
 
 ## Question 8
-Galaxy...
-* Provides unlimited compute and storage resources for free at usegalaxy.org
-* Performs automated experimental design and data analysis
-* Ensures that your analysis is performed correctly
-* Provides an environment for researchers to easily use existing bioinformatic software and record and share the results
+A student is writing Python 3.xx code to read in a dna sequence using the following command:
+```python
+>>> dna=input("Enter a DNA sequence, please:")
 ```
-Answer: Provides an environment for researchers to easily use existing bioinformatic software and record and share the results
+The student tries three different ways to compute the index of the second occurrence of the string 'atg' in the dna sequence:
+```python
+A.
+>>> o1 = dna.find('atg')
+>>> dna.find('atg',o1+1)
+
+B.
+>>> dna.rfind('atg')
+
+C. 
+>>> dna.find('atg',dna.find('atg')+1) 
+```
+Which of these ways is correct:
+* A or C
+* B
+* A
+* None of these
+```
+Answer: B
 ```
 
 ## Question 9
