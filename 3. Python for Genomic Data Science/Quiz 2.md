@@ -127,31 +127,66 @@ Answer: B
 ```
 
 ## Question 9
-You need what to use the public Galaxy site usegalaxy.org?
-* Large hard drives (at least 20TB)
-* Your own data in XML format
-* Access to your own supercomputers and at least two IT professionals
-* An email account and a web browser
+What are the types of the following literals, in order?
+```python
+1, 1., 1.0, 1e10, 0x12, "1", "1.0", 100000000000000000, 100000000000000000.0
 ```
-Answer: An email account and a web browser
+int, no type (error), float, float, hex, string, string, int, float
+int, float, float, float, int, str, str, int, float
+int, float, float, float, hex, int, float, int, float
+int, no type (error), float, double, int, string, string, long, double
+```
+Answer: int, no type (error), float, float, hex, string, string, int, float
 ```
 
 ## Question 10
-For analysis where usegalaxy.org does not provide appropriate computation power or tools, you can:
-* All of these options
-* Use any of the ~60 other public Galaxy servers
-* Run your own, local Galaxy server
-* Run Galaxy on the Amazon Cloud
+What is the result of 
+```python
+int(4+6/2+2*2)?
 ```
-Answer: All of these options
+* 11.0
+* 9
+* 9.0
+* 11
+```
+Answer: 11
 ```
 
 ## Question 11
-Galaxy...
-* Cannot be used by anyone else to start a server
-* Can run as a server on Windows
-* Is highly configurable for many types of compute infrastructure
-* Can only work on one cluster system
+What is the difference between the expressions
+```python
+val = 1234567 
+
+val = 1.234567 * 10 ** 6
 ```
-Answer: Is highly configurable for many types of compute infrastructure
+* In the first expression val is of type int, in the second val is of type float. Numerical values are different.
+* In the first expression val is of type int, in the second val is of type float. Numerical value is the same.
+* The two values are not equal.
+* No difference.
+* The value of the variable val in the first expression is different from the value of the variable val in the second expression.
+```
+Answer: In the first expression val is of type int, in the second val is of type float. Numerical values are different.
+```
+
+# Question 12
+What are the values of the variables a, b, c and d after the following statements have been executed?
+```python
+a=1
+
+b=2
+
+c=a+b
+
+a = b
+
+a = c
+
+d=a+c
+```
+* a will be 2, b will be 2, c 3 and d 4.
+* a will be 3, b will be 2, c 3 and d 6.
+* a will be 1, b will be 2, c 3 and d 6.
+* a will be 1, b will be 2, c 3 and d 4.
+```
+Answer: a will be 3, b will be 2, c 3 and d 6.
 ```
