@@ -85,13 +85,22 @@ Answer: '210bp210bp'
 ```
 
 ## Question 7
-How can you extend Galaxy?
-* You can write and share new tools
-* Since it's open source, you can copy it and make changes to run your own Galaxy website
-* All of these options
-* You can contribute to the Galaxy code and documentation using github
+You wish to display the following text using the print function in Python:
+```python
+>HSBGPG Human bone gla gene\transcript "BGP"
+GGCAGATTCCCCCTAGACODE
 ```
-Answer: All of these options
+Select the correct way to display this output in Python 3.xx:
+* print("""\
+  >HSBGPG Human bone gla gene\transcript "BGP"
+  GGCAGATTCCCCCTAGA
+  """)
+* print('>HSBGPG Human bone gla gene\\transcript "BGP"\nGGCAGATTCCCCCTAGA')
+* print('>HSBGPG Human bone gla gene\transcript "BGP"
+  GGCAGATTCCCCCTAGA')
+* print(">HSBGPG Human bone gla gene\transcript "BGP"\nGGCAGATTCCCCCTAGA")
+```
+Answer: print('>HSBGPG Human bone gla gene\\transcript "BGP"\nGGCAGATTCCCCCTAGA')
 ```
 
 ## Question 8
