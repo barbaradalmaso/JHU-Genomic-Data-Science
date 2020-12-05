@@ -1,19 +1,27 @@
 ## Question 1
-Which of the following is not a good programming strategy?
-* Use external modules and libraries when they are available.
-* Do not include many details in the overall design of the program.
-* List all the steps by which the program computes the output.
-* Identify the required inputs, such as data or specifications from the user.
+What is the result of the following operation in Python: 17/2 ?
+* 8 or 8.5, depending on the Python version
+* 8
+* 8.0
+* 8.5
 ```
-Answer: Do not include many details in the overall design of the program.
+Answer: 8.5
 ```
 
 ## Question 2
-Which of these is not true about pseudocode?
-* It is an informal way to describe how you will solve a problem.
-* It can be read and interpreted by the computer.
-* It lists all steps that are required in order to compute the result.
-* It does not use the rigorous syntax of a programming language.
+Given the following code in Python:
+```python
+>>> mydna = 'acgt'
+>>> mydna = mydna + mydna
+```
+What will be the result of typing the following at the Python interpreter prompt:
+```python
+>>> myDna
+```
+* an error message
+* no output
+* ' '
+* 'ACGT'
 ```
 Answer: It can be read and interpreted by the computer.
 ```
