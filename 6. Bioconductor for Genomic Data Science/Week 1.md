@@ -1,192 +1,119 @@
+# Quiz 1
+
 ## Question 1
-What is the result of the following operation in Python: 17/2 ?
-* 8 or 8.5, depending on the Python version
-* 8
-* 8.0
-* 8.5
+Use the AnnotationHub package to obtain data on "CpG Islands" in the human genome.
+
+**Question:** How many islands exists on the autosomes?
+* 26641
+* 24696
+* 26567
+* 25495
 ```
-Answer: 8 or 8.5, depending on the Python version
+Answer:
 ```
 
 ## Question 2
+**Question:** How many CpG Islands exists on chromosome 4?
 Given the following code in Python:
-```python
->>> mydna = 'acgt'
->>> mydna = mydna + mydna
+* 1011
+* 1004
+* 1031
+* 1019
 ```
-What will be the result of typing the following at the Python interpreter prompt:
-```python
->>> myDna
-```
-* an error message
-* no output
-* ' '
-* 'ACGT'
-```
-Answer: an error message
+Answer:
 ```
 
 ## Question 3
-The following commands are entered at the prompt of Python interpreter.
-```python
->>> dna="atgctggggact"
->>> dna[:3]
->>> dna
+Obtain the data for the H3K4me3 histone modification for the H1 cell line from Epigenomics Roadmap, using AnnotationHub. Subset these regions to only keep regions mapped to the autosomes (chromosomes 1 to 22).
+
+**Question:** How many bases does these regions cover?
+* 41135164
+* 43087951
+* 41553593
+* 42682454
 ```
-What will be the output of the last command?
-* 'ctggggact'
-* 'atg'
-* 'atgctggggact'
-* 'atgc'
-```
-Answer: 'atgctggggact'
+Answer:
 ```
 
 ## Question 4
-What is the output of
-```python
-'dna'+1+2+3
+Obtain the data for the H3K27me3 histone modification for the H1 cell line from Epigenomics Roadmap, using the AnnotationHub package. Subset these regions to only keep regions mapped to the autosomes. In the return data, each region has an associated "signalValue".
+
+**Question:** What is the mean signalValue across all regions on the standard chromosomes?
+* 4.770728
+* 4.917626
+* 4.517959
+* 4.419120
 ```
-* Error
-* dna
-* dna123
-* dna6
-```
-Answer: Error
+Answer:
 ```
 
 ## Question 5
-Given a string variable called dna, for instance:
-```python
->>> dna='agcagttagcta'
+Bivalent regions are bound by both H3K4me3 and H3K27me3.
+
+**Question:** Using the regions we have obtained above, how many bases on the standard chromosomes are bivalently marked?
+* 9926503
+* 10289096
+* 10984729
+* 10207246
 ```
-What is a correct way to count the number of occurrences of 'ag' in dna:
-* dna.count('ag')
-* count(dna,'a')+count(dna,'g')
-* count(dna,'ag')+count(dna,'AG')
-* count(dna,'ag')
-```
-Answer: dna.count('ag')
+Answer:
 ```
 
 ## Question 6
-What is the value of the variable seqlen, after the following code is entered in Python:
-```python
->>> seqlen = '10bp'
->>> seqlen='2'+seqlen
->>> seqlen=seqlen*2
+We will examine the extent to which bivalent regions overlap CpG Islands.
+
+**Question:** how big a fraction (expressed as a number between 0 and 1) of the bivalent regions, overlap one or more CpG Islands?
+* 0.5893028
+* 0.5383644
+* 0.496077
+* 0.5621946
 ```
-* '1010bp'
-* '12bp12bp'
-* '10bp'
-* '210bp210bp'
-```
-Answer: '210bp210bp'
+Answer:
 ```
 
 ## Question 7
-You wish to display the following text using the print function in Python:
-```python
->HSBGPG Human bone gla gene\transcript "BGP"
-GGCAGATTCCCCCTAGACODE
+**Question:** How big a fraction (expressed as a number between 0 and 1) of the bases which are part of CpG Islands, are also bivalent marked?
+* 0.1860021
+* 0.2924248
+* 0.241688
+* 0.2750512
 ```
-Select the correct way to display this output in Python 3.xx:
-* print("""\ >HSBGPG Human bone gla gene\transcript "BGP" GGCAGATTCCCCCTAGA""")
-* print('>HSBGPG Human bone gla gene\\transcript "BGP"\nGGCAGATTCCCCCTAGA')
-* print('>HSBGPG Human bone gla gene\transcript "BGP"
-  GGCAGATTCCCCCTAGA')
-* print(">HSBGPG Human bone gla gene\transcript "BGP"\nGGCAGATTCCCCCTAGA")
-```
-Answer: print('>HSBGPG Human bone gla gene\\transcript "BGP"\nGGCAGATTCCCCCTAGA')
+Answer:
 ```
 
 ## Question 8
-A student is writing Python 3.xx code to read in a dna sequence using the following command:
-```python
->>> dna=input("Enter a DNA sequence, please:")
+**Question:** How many bases are bivalently marked within 10kb of CpG Islands?
+**Tip**: consider using the "resize()"" function
+* 11928130
+* 7920203
+* 11104114
+* 9782086
 ```
-The student tries three different ways to compute the index of the second occurrence of the string 'atg' in the dna sequence:
-```python
-A.
->>> o1 = dna.find('atg')
->>> dna.find('atg',o1+1)
-
-B.
->>> dna.rfind('atg')
-
-C. 
->>> dna.find('atg',dna.find('atg')+1) 
-```
-Which of these ways is correct:
-* A or C
-* B
-* A
-* None of these
-```
-Answer: A or C
+Answer:
 ```
 
 ## Question 9
-What are the types of the following literals, in order?
-```python
-1, 1., 1.0, 1e10, 0x12, "1", "1.0", 100000000000000000, 100000000000000000.0
-```
-* int, no type (error), float, float, hex, string, string, int, float
-* int, float, float, float, int, str, str, int, float
-* int, float, float, float, hex, int, float, int, float
-* int, no type (error), float, double, int, string, string, long, double
+**Question:** How big a fraction (expressed as a number between 0 and 1) of the human genome is contained in a CpG Island?
+
+**Tip 1:** the object returned by AnnotationHub contains "seqlengths".
+**Tip 2:** you may encounter an integer overflow. As described in the session on R Basic Types, you can address this by converting integers to numeric before summing them, "as.numeric()".
+* 0.007047481
+* 0.005769540
+* 0.006823921
+* 0.007288502
 ```
 Answer: int, float, float, float, int, str, str, int, float
 ```
 
 ## Question 10
-What is the result of 
-```python
+**Question:** Compute an odds-ratio for the overlap of bivalent marks with CpG islands.
+```R
 int(4+6/2+2*2)?
 ```
-* 11.0
-* 9
-* 9.0
-* 11
+* 169.0962
+* 138.4391
+* 156.0433
+* 160.4022
 ```
 Answer: 11
-```
-
-## Question 11
-What is the difference between the expressions
-```python
-val = 1234567 
-
-val = 1.234567 * 10 ** 6
-```
-* In the first expression val is of type int, in the second val is of type float. Numerical values are different. 
-* In the first expression val is of type int, in the second val is of type float. Numerical value is the same.
-* The two values are not equal.
-* No difference.
-* The value of the variable val in the first expression is different from the value of the variable val in the second expression.
-```
-Answer: In the first expression val is of type int, in the second val is of type float. Numerical value is the same.
-```
-
-# Question 12
-What are the values of the variables a, b, c and d after the following statements have been executed?
-```python
-a=1
-
-b=2
-
-c=a+b
-
-a = b
-
-a = c
-
-d=a+c
-```
-* a will be 2, b will be 2, c 3 and d 4.
-* a will be 3, b will be 2, c 3 and d 6.
-* a will be 1, b will be 2, c 3 and d 6.
-* a will be 1, b will be 2, c 3 and d 4.
-```
-Answer: a will be 3, b will be 2, c 3 and d 6.
 ```
