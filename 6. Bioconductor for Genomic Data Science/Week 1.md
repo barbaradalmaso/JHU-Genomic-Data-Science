@@ -300,7 +300,7 @@ sum(as.numeric(width(unlist(autosome_CpG_data))))/genome_size
 * 0.006823921
 * 0.007288502
 ```
-Answer: int, float, float, float, int, str, str, int, float
+Answer: 0.007047481
 ```
 
 ## Question 10
