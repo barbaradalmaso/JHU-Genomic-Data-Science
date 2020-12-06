@@ -22,7 +22,7 @@ ipak(packages)
 
 ## Question 1
 Use the AnnotationHub package to obtain data on "CpG Islands" in the human genome.
-
+**Question:** How many islands exists on the autosomes?
 ```R
 ah <- AnnotationHub()
 
@@ -71,8 +71,6 @@ unlist(autosome_CpG_data)
 ##   -------
 ##   seqinfo: 93 sequences (1 circular) from hg19 genome
 ```
-
-**Question:** How many islands exists on the autosomes?
 * 26641
 * 24696
 * 26567
@@ -130,8 +128,7 @@ ah_H3K4me_data <- ah_H3K4me[["AH29884"]]
 ah_H3K4me_autosome_data <- subset(ah_H3K4me_data, seqnames %in% autosome)
 # count base pairs
 sum(width(unlist(ah_H3K4me_autosome_data)))
-```
-```
+
 ## [1] 41135164
 ```
 * 41135164
@@ -146,18 +143,45 @@ Answer: 41135164
 Obtain the data for the H3K27me3 histone modification for the H1 cell line from Epigenomics Roadmap, using the AnnotationHub package. Subset these regions to only keep regions mapped to the autosomes. In the return data, each region has an associated "signalValue".
 
 **Question:** What is the mean signalValue across all regions on the standard chromosomes?
+```R
+ah_H3K27me3 <- query(ah, c("H3K27me3", "narrowPeak", "E003"))
+# ah_H3K27me3
+
+# retrieve data
+ah_H3K27me3_data <- ah_H3K27me3[["AH29892"]]
+
+# summary(width(ah_H3K27me3_data))
+# seqlevels(ah_H3K27me3_data)
+# seqinfo(ah_H3K27me3_data)
+# subset standard chrosome data
+
+ah_H3K27me3_autosome_data <- subset(ah_H3K27me3_data, seqnames %in% autosome)
+
+# calculate mean signalValue
+ah_H3K27me3_autosome_data_mean <- mean(ah_H3K27me3_autosome_data$signalValue)
+ah_H3K27me3_autosome_data_mean
+
+## [1] 4.770728
+```
 * 4.770728
 * 4.917626
 * 4.517959
 * 4.419120
 ```
-Answer:
+Answer: 4.770728
 ```
 
 ## Question 5
 Bivalent regions are bound by both H3K4me3 and H3K27me3.
 
 **Question:** Using the regions we have obtained above, how many bases on the standard chromosomes are bivalently marked?
+```R
+bivalent_data <- intersect(unlist(ah_H3K4me_autosome_data), unlist(ah_H3K27me3_autosome_data))
+sum(width(reduce(bivalent_data)))
+
+## [1] 10289096
+```
+
 * 9926503
 * 10289096
 * 10984729
