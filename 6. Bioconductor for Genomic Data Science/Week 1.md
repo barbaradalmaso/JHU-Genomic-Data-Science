@@ -1,9 +1,9 @@
 # Quiz 1
 
 ```R
-# load ipak function to check if selected packages are installed, 
-  installs them if they are not,
-  then load them into the R session. 
+## load ipak function to check if selected packages are installed, 
+##  installs them if they are not,
+##  then load them into the R session. 
   
 ipak <- function(pkg){
     new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
@@ -12,7 +12,7 @@ ipak <- function(pkg){
     sapply(pkg, require, character.only = TRUE)
 }
 
-# usage
+## usage
 packages = c('AnnotationHub', 'GenomicRanges', 'rtracklayer')
 ipak(packages)
 
