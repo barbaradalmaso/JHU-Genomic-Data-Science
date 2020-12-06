@@ -53,7 +53,7 @@ autosome_CpG_data <- split_data_by_chr[autosome]
 # CpG Islands on autosome
 unlist(autosome_CpG_data)
 ```
-```
+```R
 ## GRanges object with 26641 ranges and 0 metadata columns:
 ##         seqnames               ranges strand
 ##            <Rle>            <IRanges>  <Rle>
@@ -85,7 +85,7 @@ Answer:26641
 # CpG Islands on chr4
 autosome_CpG_data[4]
 ```
-```
+```R
 ## GRangesList object of length 1:
 ## $chr4 
 ## GRanges object with 1031 ranges and 0 metadata columns:
@@ -129,6 +129,7 @@ ah_H3K4me_autosome_data <- subset(ah_H3K4me_data, seqnames %in% autosome)
 # count base pairs
 sum(width(unlist(ah_H3K4me_autosome_data)))
 
+##   -------
 ## [1] 41135164
 ```
 * 41135164
@@ -161,6 +162,7 @@ ah_H3K27me3_autosome_data <- subset(ah_H3K27me3_data, seqnames %in% autosome)
 ah_H3K27me3_autosome_data_mean <- mean(ah_H3K27me3_autosome_data$signalValue)
 ah_H3K27me3_autosome_data_mean
 
+##   -------
 ## [1] 4.770728
 ```
 * 4.770728
@@ -179,6 +181,7 @@ Bivalent regions are bound by both H3K4me3 and H3K27me3.
 bivalent_data <- intersect(unlist(ah_H3K4me_autosome_data), unlist(ah_H3K27me3_autosome_data))
 sum(width(reduce(bivalent_data)))
 
+##   -------
 ## [1] 10289096
 ```
 
@@ -187,40 +190,92 @@ sum(width(reduce(bivalent_data)))
 * 10984729
 * 10207246
 ```
-Answer:
+Answer: 10289096
 ```
 
 ## Question 6
 We will examine the extent to which bivalent regions overlap CpG Islands.
 
 **Question:** how big a fraction (expressed as a number between 0 and 1) of the bivalent regions, overlap one or more CpG Islands?
+```R
+CpG_bivalent_data <- findOverlaps(bivalent_data, unlist(autosome_CpG_data))
+fraction_bi <- length(unique(queryHits(CpG_bivalent_data)))/length(bivalent_data)
+fraction_bi
+
+##   -------
+## [1] 0.5383644
+```
 * 0.5893028
 * 0.5383644
 * 0.496077
 * 0.5621946
 ```
-Answer:
+Answer: 0.5383644
 ```
 
 ## Question 7
 **Question:** How big a fraction (expressed as a number between 0 and 1) of the bases which are part of CpG Islands, are also bivalent marked?
+```R
+ov_CpG_bivalent <- intersect(bivalent_data, unlist(autosome_CpG_data))
+fraction_CpG <- sum(width(reduce(ov_CpG_bivalent)))/sum(width(unlist(autosome_CpG_data)))
+fraction_CpG
+
+##   -------
+## [1] 0.241688
+```
 * 0.1860021
 * 0.2924248
 * 0.241688
 * 0.2750512
 ```
-Answer:
+Answer: 0.241688
 ```
 
 ## Question 8
 **Question:** How many bases are bivalently marked within 10kb of CpG Islands?
 **Tip**: consider using the "resize()"" function
+```R
+autosome_CpG_data
+```
+```R
+## GRangesList object of length 22:
+## $chr1 
+## GRanges object with 2462 ranges and 0 metadata columns:
+##          seqnames                 ranges strand
+##             <Rle>              <IRanges>  <Rle>
+##      [1]     chr1       [ 28736,  29810]      *
+##      [2]     chr1       [135125, 135563]      *
+##      [3]     chr1       [327791, 328229]      *
+##      [4]     chr1       [437152, 438164]      *
+##      [5]     chr1       [449274, 450544]      *
+##      ...      ...                    ...    ...
+##   [2458]     chr1 [249132081, 249133310]      *
+##   [2459]     chr1 [249141564, 249142796]      *
+##   [2460]     chr1 [249152412, 249153419]      *
+##   [2461]     chr1 [249167409, 249168010]      *
+##   [2462]     chr1 [249200253, 249200721]      *
+## 
+## ...
+## <21 more elements>
+## -------
+## seqinfo: 93 sequences (1 circular) from hg19 genome
+```
+```R
+CpG_10k <- resize(unlist(autosome_CpG_data), 
+                  width = 20000 + width(unlist(autosome_CpG_data)), 
+                  fix = "center")
+CpG_10k_bivalent <- intersect(CpG_10k, bivalent_data)
+sum(width(CpG_10k_bivalent))
+
+##   -------
+## [1] 9782086
+```
 * 11928130
 * 7920203
 * 11104114
 * 9782086
 ```
-Answer:
+Answer: 9782086
 ```
 
 ## Question 9
@@ -228,6 +283,17 @@ Answer:
 
 **Tip 1:** the object returned by AnnotationHub contains "seqlengths".
 **Tip 2:** you may encounter an integer overflow. As described in the session on R Basic Types, you can address this by converting integers to numeric before summing them, "as.numeric()".
+```R
+# calculate genome size
+genome <- ah[["AH5018"]]
+genome <- keepSeqlevels(genome, c("chr1", "chr2", "chr3", "chr4", "chr5", "chr6", "chr7", "chr8", "chr9", "chr10", "chr11", "chr12", "chr13", "chr14", "chr15", "chr16", "chr17", "chr18", "chr19", "chr20", "chr21", "chr22"))
+genome_size <- sum(as.numeric(seqlengths(genome)))
+# How big a fraction (expressed as a number between 0 and 1) of the human genome is contained in a CpG Island?
+sum(as.numeric(width(unlist(autosome_CpG_data))))/genome_size
+
+##   -------
+## [1] 0.007047481
+```
 * 0.007047481
 * 0.005769540
 * 0.006823921
@@ -239,10 +305,42 @@ Answer: int, float, float, float, int, str, str, int, float
 ## Question 10
 **Question:** Compute an odds-ratio for the overlap of bivalent marks with CpG islands.
 
+```R
+# odds ratio
+inOut = matrix(0, ncol = 2, nrow = 2)
+colnames(inOut) = c("in", "out")
+rownames(inOut) = c("in", "out")
+# inOut
+inOut[1,1] = sum(width(intersect(bivalent_data, 
+                                 unlist(autosome_CpG_data),
+                                 ignore.strand=TRUE)))
+inOut[1,2] = sum(width(setdiff(bivalent_data, 
+                               unlist(autosome_CpG_data),
+                               ignore.strand=TRUE)))
+inOut[2,1] = sum(width(setdiff(unlist(autosome_CpG_data), 
+                               bivalent_data, 
+                               ignore.strand=TRUE)))
+inOut[2,2] = genome_size - sum(inOut)
+
+inOut
+```
+```R
+##           in        out
+## in   4907239    5381857
+## out 15396787 2855347403
+```
+
+```R
+odd_ratio <- inOut[1,1]*inOut[2,2]/(inOut[1,2]*inOut[2,1])
+odd_ratio
+
+##   -------
+## [1] 169.0962
+```
 * 169.0962
 * 138.4391
 * 156.0433
 * 160.4022
 ```
-Answer:
+Answer: 169.0962
 ```
