@@ -22,6 +22,7 @@ ipak(packages)
 
 ## Question 1
 Use the AnnotationHub package to obtain data on "CpG Islands" in the human genome.
+
 **Question:** How many islands exists on the autosomes?
 ```R
 ah <- AnnotationHub()
@@ -76,7 +77,7 @@ unlist(autosome_CpG_data)
 * 26567
 * 25495
 ```
-Answer:26641
+Answer: 26641
 ```
 
 ## Question 2
