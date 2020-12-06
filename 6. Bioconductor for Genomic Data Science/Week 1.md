@@ -23,6 +23,55 @@ ipak(packages)
 ## Question 1
 Use the AnnotationHub package to obtain data on "CpG Islands" in the human genome.
 
+```R
+ah <- AnnotationHub()
+
+ah_human_CpG <- query(ah, c("CpG Islands", "hg19"))
+# ah_human_CpG # Used to check output
+ah_human_CpG_data <- ah_human_CpG[["AH5086"]]
+# ah_human_CpG_data # Used to check output
+
+#######################################
+# summary info about CpG island dataset
+# Used to check output
+# summary(width(ah_human_CpG_data))
+# seqinfo(ah_human_CpG_data)
+# seqlevels(ah_human_CpG_data)
+# gaps(ah_human_CpG_data)
+#######################################
+
+# reduce data
+ah_human_CpG_reduce <- reduce(ah_human_CpG_data)
+# ah_human_CpG_reduce # Used to check output
+
+# count number of CpG islands in autochromosome
+autosome <- c(paste("chr", 1:22, sep=""))
+split_data_by_chr <- split(ah_human_CpG_reduce, seqnames(ah_human_CpG_reduce))
+autosome_CpG_data <- split_data_by_chr[autosome]
+# seqlevels(autosome_CpG_data) # Used to check output
+
+# CpG Islands on autosome
+unlist(autosome_CpG_data)
+```
+```
+## GRanges object with 26641 ranges and 0 metadata columns:
+##         seqnames               ranges strand
+##            <Rle>            <IRanges>  <Rle>
+##    chr1     chr1     [ 28736,  29810]      *
+##    chr1     chr1     [135125, 135563]      *
+##    chr1     chr1     [327791, 328229]      *
+##    chr1     chr1     [437152, 438164]      *
+##    chr1     chr1     [449274, 450544]      *
+##     ...      ...                  ...    ...
+##   chr22    chr22 [51135671, 51136118]      *
+##   chr22    chr22 [51142803, 51143308]      *
+##   chr22    chr22 [51158387, 51160060]      *
+##   chr22    chr22 [51169028, 51170019]      *
+##   chr22    chr22 [51221773, 51222317]      *
+##   -------
+##   seqinfo: 93 sequences (1 circular) from hg19 genome
+```
+
 **Question:** How many islands exists on the autosomes?
 * 26641
 * 24696
