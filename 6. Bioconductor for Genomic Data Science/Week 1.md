@@ -1,5 +1,25 @@
 # Quiz 1
 
+```R
+# load ipak function to check if selected packages are installed, 
+  installs them if they are not,
+  then load them into the R session. 
+  
+ipak <- function(pkg){
+    new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+    if (length(new.pkg)) 
+        install.packages(new.pkg, dependencies = TRUE)
+    sapply(pkg, require, character.only = TRUE)
+}
+
+# usage
+packages = c('AnnotationHub', 'GenomicRanges', 'rtracklayer')
+ipak(packages)
+
+## AnnotationHub GenomicRanges   rtracklayer 
+##          TRUE          TRUE          TRUE
+```
+
 ## Question 1
 Use the AnnotationHub package to obtain data on "CpG Islands" in the human genome.
 
@@ -107,13 +127,11 @@ Answer: int, float, float, float, int, str, str, int, float
 
 ## Question 10
 **Question:** Compute an odds-ratio for the overlap of bivalent marks with CpG islands.
-```R
-int(4+6/2+2*2)?
-```
+
 * 169.0962
 * 138.4391
 * 156.0433
 * 160.4022
 ```
-Answer: 11
+Answer:
 ```
