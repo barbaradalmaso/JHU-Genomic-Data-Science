@@ -78,30 +78,68 @@ unlist(autosome_CpG_data)
 * 26567
 * 25495
 ```
-Answer:
+Answer:26641
 ```
 
 ## Question 2
 **Question:** How many CpG Islands exists on chromosome 4?
-Given the following code in Python:
+```R
+# CpG Islands on chr4
+autosome_CpG_data[4]
+```
+```
+## GRangesList object of length 1:
+## $chr4 
+## GRanges object with 1031 ranges and 0 metadata columns:
+##          seqnames                 ranges strand
+##             <Rle>              <IRanges>  <Rle>
+##      [1]     chr4       [ 53199,  53672]      *
+##      [2]     chr4       [107147, 107898]      *
+##      [3]     chr4       [124333, 124841]      *
+##      [4]     chr4       [206378, 206892]      *
+##      [5]     chr4       [298804, 299312]      *
+##      ...      ...                    ...    ...
+##   [1027]     chr4 [190939802, 190940591]      *
+##   [1028]     chr4 [190942735, 190944898]      *
+##   [1029]     chr4 [190959045, 190960011]      *
+##   [1030]     chr4 [190962112, 190962689]      *
+##   [1031]     chr4 [190986383, 191013609]      *
+## 
+## -------
+## seqinfo: 93 sequences (1 circular) from hg19 genome
+```
 * 1011
 * 1004
 * 1031
 * 1019
 ```
-Answer:
+Answer: 1031
 ```
 
 ## Question 3
 Obtain the data for the H3K4me3 histone modification for the H1 cell line from Epigenomics Roadmap, using AnnotationHub. Subset these regions to only keep regions mapped to the autosomes (chromosomes 1 to 22).
 
 **Question:** How many bases does these regions cover?
+```R
+ah_H3K4me <- query(ah, c("H3K4me3", "E003"))
+ah_H3K4me_data <- ah_H3K4me[["AH29884"]]
+# seqinfo(ah_H3K4me_data)
+# seqlevels(ah_H3K4me_data)
+
+# subset autosome data
+ah_H3K4me_autosome_data <- subset(ah_H3K4me_data, seqnames %in% autosome)
+# count base pairs
+sum(width(unlist(ah_H3K4me_autosome_data)))
+```
+```
+## [1] 41135164
+```
 * 41135164
 * 43087951
 * 41553593
 * 42682454
 ```
-Answer:
+Answer: 41135164
 ```
 
 ## Question 4
