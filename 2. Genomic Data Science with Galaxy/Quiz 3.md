@@ -67,7 +67,7 @@ What is ChIP sequencing most commonly used to measure?
 * The locations of protein to DNA interaction
 * Expression levels of particular proteins
 ```
-Answer: Methylation of bases
+Answer: The locations of protein to DNA interaction
 ```
 
 ## Question 8
