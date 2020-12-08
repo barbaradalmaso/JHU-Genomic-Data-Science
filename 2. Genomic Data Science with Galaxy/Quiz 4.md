@@ -17,7 +17,7 @@ Which of the following statements is FALSE?
 * De-novo assembly is not robust to variation
 * Align-then-assemble is not robust to variation
 ```
-Answer: Align-then-assemble is not robust to variation.
+Answer: De-novo assembly is not robust to variation
 ```
 
 ## Question 3
@@ -94,7 +94,7 @@ What comes after mapping the RNA seq data to a reference genome?
 * Compare the reference annotation with the reference genome.
 * QC again to make sure we have mapped correctly.
 ```
-Answer: Remap the reads using TopHat and continue to do differential expression analysis using the Cufflinks suite.
+Answer: Using a reference annotation we continue to do differential expression analysis using the Cufflinks suite.
 ```
 
 ## Question 10
