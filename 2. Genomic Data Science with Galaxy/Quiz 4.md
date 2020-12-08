@@ -17,7 +17,7 @@ Which of the following statements is FALSE?
 * De-novo assembly is not robust to variation
 * Align-then-assemble is not robust to variation
 ```
-Answer: Align-then-assemble approach is potentially more sensitive.
+Answer: Align-then-assemble is not robust to variation.
 ```
 
 ## Question 3
@@ -74,7 +74,7 @@ Can we use Galaxy to run the same tophat (or other tool) job over Multiple datas
 * Yes, but not with all tools.
 * Yes, the datasets need to be of the format the tool can take as input.
 ```
-Answer: Yes, but the datasets need to be of the same format.
+Answer: Yes, the datasets need to be of the format the tool can take as input.
 ```
 
 ## Question 8
@@ -84,7 +84,7 @@ What Galaxy tool might we use to refine our Cuffdiff output to show only differe
 * Filter
 * Cuffmerge
 ```
-Answer: Cuffmerge
+Answer: Filter
 ```
 
 ## Question 9
