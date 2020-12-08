@@ -54,7 +54,7 @@ One of the options is NOT a column in the output produced by Cuffdiff.
 * log2 (fold change)
 * Length of the differentially expressed gene
 ```
-Answer: Per sequence base quality
+Answer: Length of the differentially expressed gene
 ```
 
 ## Question 6
