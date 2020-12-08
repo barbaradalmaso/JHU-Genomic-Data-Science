@@ -57,7 +57,7 @@ When do we filter and trim reads? Choose the correct option.
 * Depends on tools used during downstream analysis.
 * Always trim the reads. We want only equal length reads in our data.
 ```
-Answer: Always filter and trim reads, we want high quality equal length reads to gain flexibility of using any tool of choice during downstream analysis.
+Answer: Depends on tools used during downstream analysis.
 ```
 
 ## Question 7
