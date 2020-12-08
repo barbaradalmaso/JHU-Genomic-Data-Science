@@ -7,7 +7,7 @@ Why would you use a virtual environment (virtualenv) when installing Galaxy?
 * Makes it easy to move your Galaxy installation to a new location
 * Allows you to share your Galaxy instance with others
 ```
-Answer: Allows controlling resources used by Galaxy such as CPU and Memory
+Answer: Ensures that the Galaxy environment is isolated from anything else installed on your system.
 ```
 
 ## Question 2
@@ -17,7 +17,7 @@ Which file would you edit to add an administrative user to galaxy?
 * datatypes_conf.xml
 * galaxy.ini
 ```
-Answer: galaxy.ini.sample
+Answer: auth_conf.xml
 ```
 
 ## Question 3
@@ -27,7 +27,7 @@ What is the standard way to start the Galaxy server?
 * None of these options
 * sh run.sh
 ```
-Answer: None of these options
+Answer: sh run.sh
 ```
 
 ## Question 4
@@ -67,7 +67,7 @@ Which of the following statements about access keys and security is not true?
 * If you lose your cloudman_keypair.pem you can just download it again
 * Access keys can be disabled, if you lose control of them.
 ```
-Answer: A password can be set at launch for the cloudman console
+Answer: If you lose your cloudman_keypair.pem you can just download it again
 ```
 
 ## Question 8
@@ -85,9 +85,9 @@ Which of these do we not need to simply launch a cluster and use it through the 
 * Cluster Name
 * cloudman_keypair.pem
 * AWS Access Key
-* AWS Secret Key
+* AWS Secret Key XXX
 ```
-Answer: AWS Secret Key
+Answer: cloudman_keypair.pem
 ```
 
 ## Question 10
@@ -95,7 +95,7 @@ Of the following instance types, what’s the most expensive type of instance to
 * m3.medium
 * m3.2xlarge
 * r3.4xlarge
-* c3.4xlarge
+* c3.4xlarge XXX
 ```
-Answer: c3.4xlarge
+Answer: r3.4xlarge
 ```
