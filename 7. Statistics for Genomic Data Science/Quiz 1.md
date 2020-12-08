@@ -28,6 +28,7 @@ Why is reproducibility important?
 * It guarantees that methods can be applied other types of analysis
 ```
 Answer: 
+```
 
 ## Question 4
 Which of the following might be considered necessary to increase reproducibility in modern analysis?
