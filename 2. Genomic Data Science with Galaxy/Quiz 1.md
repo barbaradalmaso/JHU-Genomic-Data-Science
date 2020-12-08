@@ -1,4 +1,4 @@
-# Quiz 1: Introduction
+# Module 1 Quiz
 
 ## Question 1
 What details do some modern papers fail to provide that inhibit reproducibility?
