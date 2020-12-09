@@ -178,7 +178,7 @@ for elem in L1:            # line 2
 ```Python
 L3=L3+elem
 ```
-* Add the following line (with the correct indentation) between lines 2 and 3:
+* Add the following line (with the correct indentation) between lines 2 and 3: **XXX**
 ```Python
 if elem not in L3:
 ```
