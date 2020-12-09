@@ -9,9 +9,11 @@ The following expression is true when rnatype is 'ncRNA' and length is at least 
 * (rnatype is not 'ncRNA' and length < 200) or (rnatype is not 'ncRNA' and length != 22)
 * (rnatype is not 'ncRNA' and length < 200) and (rnatype is not 'ncRNA' and length != 22)
 * rnatype is not 'ncRNA and length > 22
+```
+Answer: (rnatype is not 'ncRNA' and length < 200) or (rnatype is not 'ncRNA' and length != 22)
+```
 
 ## Question 2
-
 For what values of the variable fold would the following code print ‘condition B’?
 ```Python
 if fold > 2 : print(’condition A’)
@@ -23,6 +25,9 @@ else : print(’condition B’)
 * never
 * if fold is less than 2
 * if fold is bigger than 100 or fold is 2
+```
+Answer: if fold is 2
+```
 
 ## Question 3
 How many times will Python execute the code inside the following while loop?
@@ -35,13 +40,23 @@ while i< 2048 :
 * 12
 * 1025
 * 2048
+```
+Answer: 2048
+```
 
 ## Question 4
 What sequence of numbers does the range(1,-23,-3) expression evaluate to?
+```Python
+for i in range(1,-23,-3):
+    print(i)
+```
 * 1, -2, -5, -8, -11, -14, -17, -20
 * -23, -20, -17, -14, -11, -8, -5, -2
 * 1, 0, -1, -2, -3, -4, -5, -6, -7, -8, -9, -10, -11, -12, -13, -14, -15, -16, -17, -18, -19, -20, -21, -22
 * 1, -2, -5, -8, -11, -14, -17, -20, -23
+```
+Answer: 1, -2, -5, -8, -11, -14, -17, -20
+```
 
 ## Question 5
 A substring in programming represents all characters from a string, between two specified indices. Given a variable string called seq, a student writes the following program that will generate all nonempty substrings of seq:
@@ -70,6 +85,9 @@ for j in range(i+1)
 * Only B
 * B, C, and D
 * C, and D together
+```
+Answer: B and C together
+```
 
 ## Question 6
 While and for loops are equivalent: whatever you can do with one you can do with the other. Given the for loop written by the student in problem 5, which of the following while loops are equivalent to it:
@@ -135,6 +153,9 @@ while i<len(seq) :
 * F only
 * C, D, and E only
 * A, C, D and E only
+```
+Answer: C only
+```
 
 ## Question 7
 A student writes a program that for any two lists L1 and L2, computes a list L3 that contains only the elements that are common 
@@ -164,6 +185,10 @@ if elem not in L3:
 * Change line3 to be:
 ```Python
 if elem in L2 and elem not in L3:
+```
+```
+Answer: Change line 4 to:
+            L3=L3+elem
 ```
 
 ## Question 8
@@ -197,6 +222,9 @@ Which of the following statements is True for any value of the list mylist after
 * Version 2 is not computing the result variable correctly.
 * Both the result and d variables have the same value.
 * Neither Version 1 or Version 2 are computing the value of the result variable correctly.
+```
+Answer:  Neither Version 1 or Version 2 are computing the value of the result variable correctly.
+```
 
 ## Question 9
 Study the following if statement:
@@ -211,6 +239,9 @@ For what values of x will the above code print 'very big'?
 * For x > 1000000 or x < -1000000
 * For no value
 * For x < -1000000
+```
+Answer: For no value
+```
 
 ## Question 10
 What will be the value of the variable i after the following code is executed:
@@ -226,3 +257,6 @@ else:
 * 99
 * 98
 * 2
+```
+Answer: 2
+```
