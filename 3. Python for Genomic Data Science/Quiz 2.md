@@ -1,4 +1,4 @@
-# Lecture 1 Quiz
+# Lecture 2 Quiz
 ## Question 1
 What is the result of the following operation in Python: 17/2 ?
 * 8 or 8.5, depending on the Python version
