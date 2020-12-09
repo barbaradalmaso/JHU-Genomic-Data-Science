@@ -55,16 +55,17 @@ Which of the following changes make the above program correct?
   A. Program is correct as it is.
 
   B. Change line 1 to:
-
+```Python
 for i in range(len(seq)+1)
-
+```
   C. Change line 3 to:
-
+```Python
 print(seq[j:i+1])
-
+```
   D. Change line 2 to:
-
+```Python
 for j in range(i+1)
+```
 * B, and C together
 * Only B
 * B, C, and D
@@ -101,6 +102,7 @@ while i<len(seq) :
                 print(seq[j:i])
                 j+=1
       i+=1
+```
 D.
 ```Python
 i=0
@@ -110,6 +112,7 @@ while i<len(seq)+1 :
                 print(seq[j:i])
                 j=j+1
       i=i+1
+```
 E.
 ```Python
 i=1
@@ -146,22 +149,22 @@ for elem in L1:            # line 2
    L3.append(elem)    # line 4
 ```
 * The following two lines are introduced with the correct indentation after line 2: 
-
-if elem in L3:
-
-pass
-
+```Python
+      if elem in L3:
+            pass
+```
 * Change line 4 to:
-
+```Python
 L3=L3+elem
-
-Add the following line (with the correct indentation) between lines 2 and 3:
-
+```
+* Add the following line (with the correct indentation) between lines 2 and 3:
+```Python
 if elem not in L3:
-
+```
 * Change line3 to be:
-
+```Python
 if elem in L2 and elem not in L3:
+```
 
 ## Question 8
 Study the following two Python code fragments:
