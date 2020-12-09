@@ -6,7 +6,7 @@ The following expression is true when rnatype is 'ncRNA' and length is at least 
 (rnatype is 'ncRNA' and length>=200) or (rnatype is 'ncRNA' and length==22)
 ```
 * rnatype is not 'ncRNA' or ( length <200 and length != 22)
-* (rnatype is not 'ncRNA' and length < 200) or (rnatype is not 'ncRNA' and length != 22)
+* (rnatype is not 'ncRNA' and length < 200) or (rnatype is not 'ncRNA' and length != 22) **XXXXX**
 * (rnatype is not 'ncRNA' and length < 200) and (rnatype is not 'ncRNA' and length != 22)
 * rnatype is not 'ncRNA and length > 22
 ```
@@ -39,7 +39,7 @@ while i< 2048 :
 * 11
 * 12
 * 1025
-* 2048
+* 2048 **XXX**
 ```
 Answer: 2048
 ```
@@ -81,7 +81,7 @@ print(seq[j:i+1])
 ```Python
 for j in range(i+1)
 ```
-* B, and C together
+* B, and C together **XXXXX**
 * Only B
 * B, C, and D
 * C, and D together
@@ -174,7 +174,7 @@ for elem in L1:            # line 2
       if elem in L3:
             pass
 ```
-* Change line 4 to:
+* Change line 4 to: **XXX**
 ```Python
 L3=L3+elem
 ```
@@ -221,7 +221,7 @@ Which of the following statements is True for any value of the list mylist after
 * The value of the result variable is the same, but the variable d is different.
 * Version 2 is not computing the result variable correctly.
 * Both the result and d variables have the same value.
-* Neither Version 1 or Version 2 are computing the value of the result variable correctly.
+* Neither Version 1 or Version 2 are computing the value of the result variable correctly. **XXX**
 ```
 Answer:  Neither Version 1 or Version 2 are computing the value of the result variable correctly.
 ```
