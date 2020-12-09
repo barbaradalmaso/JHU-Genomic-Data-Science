@@ -6,11 +6,11 @@ The following expression is true when rnatype is 'ncRNA' and length is at least 
 (rnatype is 'ncRNA' and length>=200) or (rnatype is 'ncRNA' and length==22)
 ```
 * rnatype is not 'ncRNA' or ( length <200 and length != 22)
-* (rnatype is not 'ncRNA' and length < 200) or (rnatype is not 'ncRNA' and length != 22) **XXXXX**
-* (rnatype is not 'ncRNA' and length < 200) and (rnatype is not 'ncRNA' and length != 22) **XXXXX**
+* (rnatype is not 'ncRNA' and length < 200) or (rnatype is not 'ncRNA' and length != 22) 
+* (rnatype is not 'ncRNA' and length < 200) and (rnatype is not 'ncRNA' and length != 22) 
 * rnatype is not 'ncRNA and length > 22
 ```
-Answer: (rnatype is not 'ncRNA' and length < 200) and (rnatype is not 'ncRNA' and length != 22)
+Answer: rnatype is not 'ncRNA' or ( length <200 and length != 22)
 ```
 
 ## Question 2
@@ -81,7 +81,7 @@ print(seq[j:i+1])
 ```Python
 for j in range(i+1)
 ```
-* B, and C together **XXXXX**
+* B, and C together 
 * Only B
 * B, C, and D
 * C, and D together
@@ -187,9 +187,8 @@ if elem not in L3:
 if elem in L2 and elem not in L3:
 ```
 ```
-Answer: The following two lines are introduced with the correct indentation after line 2:
-            if elem in L3:
-            pass
+Answer: Add the following line (with the correct indentation) between lines 2 and 3:
+            if elem not in L3:
 ```
 
 ## Question 8
@@ -220,11 +219,11 @@ than the variable result should be True, otherwise it should be False. For insta
 
 Which of the following statements is True for any value of the list mylist after the execution of both versions of code?
 * The value of the result variable is the same, but the variable d is different.
-* Version 2 is not computing the result variable correctly. **XXX**
+* Version 2 is not computing the result variable correctly. 
 * Both the result and d variables have the same value.
-* Neither Version 1 or Version 2 are computing the value of the result variable correctly. **XXX**
+* Neither Version 1 or Version 2 are computing the value of the result variable correctly. 
 ```
-Answer:  Version 2 is not computing the result variable correctly.
+Answer:  The value of the result variable is the same, but the variable d is different.
 ```
 
 ## Question 9
