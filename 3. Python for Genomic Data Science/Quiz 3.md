@@ -8,6 +8,9 @@ What data type is the object below?
 * Array
 * List
 * Set
+```
+Answer:
+```
 
 ## Question 2
 
@@ -21,6 +24,9 @@ What is the value returned when the code below is executed:
 * 90
 * 90.0
 * 85
+```
+Answer:
+```
 
 ## Question 3
 Suppose splice_site_pairs = ['GT-AG','GC-AG','AT-AC']. What is splice_site_pairs[:-1] ?
@@ -28,6 +34,9 @@ Suppose splice_site_pairs = ['GT-AG','GC-AG','AT-AC']. What is splice_site_pairs
 * ['GT-AG']
 * ['GT-AG', 'GC-AG']
 * Error
+```
+Answer:
+```
 
 ## Question 4
 We want to add a new element to a list variable L. The new element is stored in a variable e. What command do we use?
@@ -35,6 +44,9 @@ We want to add a new element to a list variable L. The new element is stored in 
 * L.add(e)
 * L.addLast(e)
 * L.append(e)
+```
+Answer:
+```
 
 ## Question 5
 
@@ -48,6 +60,9 @@ Suppose t = ('a', 'c', 'g', 't'). What will be the output of the following code:
 * 1
 * Error
 * 5
+```
+Answer:
+```
 
 ## Question 6
 What is the result of the print function in the following Python 3.xx code:
@@ -64,6 +79,9 @@ print(nt[-1])
 * 'c'
 * 'a'
 * 'g'
+```
+Answer:
+```
 
 ## Question 7
 To delete an entry with the key 'a' from the dictionary dna_counts={'g': 13, 'c': 3,
@@ -74,6 +92,9 @@ To delete an entry with the key 'a' from the dictionary dna_counts={'g': 13, 'c'
 * dna_counts.delete('a':16)
 * dna_counts[-1]=''
 * del dna_counts['a']
+```
+Answer:
+```
 
 ## Question 8
 Suppose dna is a string variable that contains only 'a','c','g' or 't' characters. 
@@ -98,12 +119,19 @@ dna_counts=
 max_freq=sorted(dna_counts.keys())[-1]
 ```
 
+```
+Answer:
+```
+
 ## Question 9
 Suppose L1 and L2 are two list variables. What does the list variable L3 = list(set(L1)&set(L2)) contain?
 * A list of two sets: one set with the elements of list L1, and another set with the elements of L2
 * A list of sets formed with the elements of lists L1 and L2
 * All elements in lists L1 and L2
 * All elements common between lists L1 and L2 without duplicates
+```
+Answer:
+```
 
 ## Question 10
 How many elements are in the dictionary someData after the following code has been executed?
@@ -118,3 +146,6 @@ someData['cheese'] = 'Dairy'
 * 3
 * 2
 * 0
+```
+Answer:
+```
