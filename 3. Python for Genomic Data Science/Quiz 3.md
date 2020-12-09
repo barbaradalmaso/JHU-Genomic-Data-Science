@@ -9,7 +9,7 @@ What data type is the object below?
 * List
 * Set
 ```
-Answer:
+Answer: List
 ```
 
 ## Question 2
@@ -25,7 +25,7 @@ What is the value returned when the code below is executed:
 * 90.0
 * 85
 ```
-Answer:
+Answer: 90.0
 ```
 
 ## Question 3
@@ -35,7 +35,7 @@ Suppose splice_site_pairs = ['GT-AG','GC-AG','AT-AC']. What is splice_site_pairs
 * ['GT-AG', 'GC-AG']
 * Error
 ```
-Answer:
+Answer: ['GT-AG', 'GC-AG']
 ```
 
 ## Question 4
@@ -45,7 +45,7 @@ We want to add a new element to a list variable L. The new element is stored in 
 * L.addLast(e)
 * L.append(e)
 ```
-Answer:
+Answer: L.append(e)
 ```
 
 ## Question 5
@@ -61,7 +61,7 @@ Suppose t = ('a', 'c', 'g', 't'). What will be the output of the following code:
 * Error
 * 5
 ```
-Answer:
+Answer: Error
 ```
 
 ## Question 6
@@ -80,7 +80,7 @@ print(nt[-1])
 * 'a'
 * 'g'
 ```
-Answer:
+Answer: t
 ```
 
 ## Question 7
@@ -93,7 +93,7 @@ To delete an entry with the key 'a' from the dictionary dna_counts={'g': 13, 'c'
 * dna_counts[-1]=''
 * del dna_counts['a']
 ```
-Answer:
+Answer: del dna_counts['a']
 ```
 
 ## Question 8
@@ -120,7 +120,9 @@ max_freq=sorted(dna_counts.keys())[-1]
 ```
 
 ```
-Answer:
+Answer: dna_counts=
+{'t':dna.count('t'),'c':dna.count('c'),'g':dna.count('g'),'a':dna.count('a')}
+max_freq=sorted(dna_counts.values())[-1]
 ```
 
 ## Question 9
@@ -130,7 +132,7 @@ Suppose L1 and L2 are two list variables. What does the list variable L3 = list(
 * All elements in lists L1 and L2
 * All elements common between lists L1 and L2 without duplicates
 ```
-Answer:
+Answer: All elements common between lists L1 and L2 without duplicates
 ```
 
 ## Question 10
@@ -147,5 +149,5 @@ someData['cheese'] = 'Dairy'
 * 2
 * 0
 ```
-Answer:
+Answer: 2
 ```
