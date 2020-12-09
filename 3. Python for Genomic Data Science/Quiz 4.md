@@ -10,7 +10,7 @@ The following expression is true when rnatype is 'ncRNA' and length is at least 
 * (rnatype is not 'ncRNA' and length < 200) and (rnatype is not 'ncRNA' and length != 22)
 * rnatype is not 'ncRNA and length > 22
 ```
-Answer: (rnatype is not 'ncRNA' and length < 200) or (rnatype is not 'ncRNA' and length != 22)
+Answer: (rnatype is not 'ncRNA' and length < 200) and (rnatype is not 'ncRNA' and length != 22)
 ```
 
 ## Question 2
@@ -39,9 +39,9 @@ while i< 2048 :
 * 11
 * 12
 * 1025
-* 2048 **XXX**
+* 2048 
 ```
-Answer: 2048
+Answer: 11
 ```
 
 ## Question 4
@@ -86,7 +86,7 @@ for j in range(i+1)
 * B, C, and D
 * C, and D together
 ```
-Answer: B and C together
+Answer: B, C, and D
 ```
 
 ## Question 6
@@ -187,8 +187,9 @@ if elem not in L3:
 if elem in L2 and elem not in L3:
 ```
 ```
-Answer: Change line 4 to:
-            L3=L3+elem
+Answer: The following two lines are introduced with the correct indentation after line 2:
+            if elem in L3:
+            pass
 ```
 
 ## Question 8
@@ -223,7 +224,7 @@ Which of the following statements is True for any value of the list mylist after
 * Both the result and d variables have the same value.
 * Neither Version 1 or Version 2 are computing the value of the result variable correctly. **XXX**
 ```
-Answer:  Neither Version 1 or Version 2 are computing the value of the result variable correctly.
+Answer:  Version 2 is not computing the result variable correctly.
 ```
 
 ## Question 9
