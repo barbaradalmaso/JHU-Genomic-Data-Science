@@ -24,6 +24,9 @@ Which of the functions swap1, swap2, swap3, and swap4 is correct?
 * None
 * Functions swap2, swap3, and swap4 only
 * Function swap2 only
+```
+Answer: Functions swap2, swap3, and swap4 only
+```
 
 ## Question 2
 Consider the following two functions:
@@ -44,6 +47,9 @@ For what values of x will f1 and f2 return the same value?
 * Any value of x
 * For negative values of x only
 * For positive values of x only
+```
+Answer: When x is zero or positive
+```
 
 ## Question 3
 A recursive function in programming is a function that calls itself during its execution. The following two functions are examples of recursive functions:
@@ -60,13 +66,29 @@ def function2(length):
 What can you say about the output of function1(3) and function2(3)?
 * function1 produces the output: 
 
-    3 2 1 and function2 runs infinitely.
+    3 
+    
+    2
+    
+    1
+    
+    and function2 runs infinitely.
 * function1 produces the output: 3 2 1
 
     and function2 runs infinitely.
 * The two functions produce the same output: 3 2 1
 * The two functions produce the same output: 1 2 3.
- 
+```
+Answer: Function1 produces the output: 
+
+    3 
+    
+    2
+    
+    1
+    
+    and function2 runs infinitely.
+```
 
 ## Question 4
 The following recursive function takes three positive integer arguments:
@@ -80,13 +102,19 @@ What is the value returned by the compute function?
 * x
 * x+y
 * x+n*y
+```
+Answer: x
+```
 
 ## Question 5
 What will the returned value be for the compute function defined in Question 4 if the argument n is negative?
 * The function will never return a value.
-* x-n*y
+* x-n*y **XX*
 * x
 * x+n*y
+```
+Answer: The function will never return a value.
+```
 
 ## Question 6
 The following functions are all intended to check whether a string representing a dna sequence contains any characters 
@@ -124,6 +152,9 @@ def valid_dna4(dna):
 * valid_dna4 only
 * valid_dna1, valid_dna2, and valid_dna4 only
 * valid_dna2 only
+```
+Answer: valid_dna4 only
+```
 
 ## Question 7
 What is the type of variable L3 and what is its value if L1 and L2 are lists?
@@ -134,6 +165,9 @@ L3 = [i for i in set(L1) if i in L2]
 * L3 is a set with all the elements in L1 and L2.
 * L3 is a list that contains only the elements that are common between the lists (without duplicates).
 * L3 is a set with elements common between the lists L2 and L3.
+```
+Answer: L3 is a list that contains only the elements that are common between the lists (without duplicates).
+```
 
 ## Question 8
 What will be printed after executing the following code?
@@ -152,15 +186,22 @@ What will be printed after executing the following code?
     Inside function now!
 *   An error message.
 *   Test function, then an error message
+```
+Answer: An error message.
+```
 
 ## Question 9
 Which statement below is true about a function:
-* must have at least one parameter
+* must have at least one parameter **XX*
 * must always have a return statement
 * its arguments always appear within brackets
 * may have no parameters
+```
+Answer: its arguments always appear within brackets
+```
 
-## Which of the following function headers is correct?
+## Question 10
+Which of the following function headers is correct?
 ```
    A. def afunction(a1 = 1, a2):
 
@@ -172,3 +213,6 @@ Which statement below is true about a function:
 * None is correct.
 * A
 * A, B
+```
+Answer: C
+```
