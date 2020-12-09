@@ -149,22 +149,15 @@ What will be printed after executing the following code?
 >>>message="Outside function!"
 >>>f("Test function:")
 ```
-* 
-```
-Outside function!
-```
-* 
-```
-Outside function!
+*   Outside function!
 
-Test function:
+*   Outside function!
+    Test function:
+    Inside function now!
 
-Inside function now!
-```
+*   An error message.
 
-* An error message.
-
-* Test function, then an error message
+*   Test function, then an error message
 
 ## Question 9
 Which statement below is true about a function:
