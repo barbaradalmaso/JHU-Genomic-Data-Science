@@ -7,7 +7,7 @@ The following expression is true when rnatype is 'ncRNA' and length is at least 
 ```
 * rnatype is not 'ncRNA' or ( length <200 and length != 22)
 * (rnatype is not 'ncRNA' and length < 200) or (rnatype is not 'ncRNA' and length != 22) **XXXXX**
-* (rnatype is not 'ncRNA' and length < 200) and (rnatype is not 'ncRNA' and length != 22)
+* (rnatype is not 'ncRNA' and length < 200) and (rnatype is not 'ncRNA' and length != 22) **XXXXX**
 * rnatype is not 'ncRNA and length > 22
 ```
 Answer: (rnatype is not 'ncRNA' and length < 200) and (rnatype is not 'ncRNA' and length != 22)
@@ -86,7 +86,7 @@ for j in range(i+1)
 * B, C, and D
 * C, and D together
 ```
-Answer: B, C, and D
+Answer: Only B
 ```
 
 ## Question 6
@@ -169,7 +169,7 @@ for elem in L1:            # line 2
 
    L3.append(elem)    # line 4
 ```
-* The following two lines are introduced with the correct indentation after line 2: 
+* The following two lines are introduced with the correct indentation after line 2: **XXX**
 ```Python
       if elem in L3:
             pass
@@ -220,7 +220,7 @@ than the variable result should be True, otherwise it should be False. For insta
 
 Which of the following statements is True for any value of the list mylist after the execution of both versions of code?
 * The value of the result variable is the same, but the variable d is different.
-* Version 2 is not computing the result variable correctly.
+* Version 2 is not computing the result variable correctly. **XXX**
 * Both the result and d variables have the same value.
 * Neither Version 1 or Version 2 are computing the value of the result variable correctly. **XXX**
 ```
