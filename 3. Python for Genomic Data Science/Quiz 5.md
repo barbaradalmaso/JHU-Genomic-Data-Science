@@ -150,10 +150,12 @@ What will be printed after executing the following code?
 >>>f("Test function:")
 ```
 * 
-```Outside function!
+```
+Outside function!
 ```
 * 
-```Outside function!
+```
+Outside function!
 
 Test function:
 
@@ -182,4 +184,4 @@ Which statement below is true about a function:
 * C
 * None is correct.
 * A
-* A,B
+* A, B
