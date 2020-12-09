@@ -120,7 +120,9 @@ max_freq=sorted(dna_counts.keys())[-1]
 ```
 
 ```
-Answer: dna_counts=
+Answer: 
+
+dna_counts=
 {'t':dna.count('t'),'c':dna.count('c'),'g':dna.count('g'),'a':dna.count('a')}
 max_freq=sorted(dna_counts.values())[-1]
 ```
