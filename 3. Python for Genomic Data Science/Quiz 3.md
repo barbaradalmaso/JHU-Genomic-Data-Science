@@ -78,6 +78,7 @@ To delete an entry with the key 'a' from the dictionary dna_counts={'g': 13, 'c'
 ## Question 8
 Suppose dna is a string variable that contains only 'a','c','g' or 't' characters. 
 What Python code below can we use to find the frequency (max_freq) of the most frequent character in string dna?
+
 * 
 ```Python
 dna_counts=
