@@ -59,28 +59,17 @@ def function2(length):
 ```
 What can you say about the output of function1(3) and function2(3)?
 * function1 produces the output: 
-``` 3 2 1 and function2 runs infinitely.
-```
-* function1 produces the output:
-```
-3
 
-2
+    3 2 1 and function2 runs infinitely.
 
-1
-```
-and function2 runs infinitely.
-* The two functions produce the same output:
-```
-3
+* function1 produces the output: 3 2 1
 
-2
+    and function2 runs infinitely.
+    
+* The two functions produce the same output: 3 2 1
 
-1
-```
-* The two functions produce the same output:
-``` 1 2 3.
-``` 
+* The two functions produce the same output: 1 2 3.
+ 
 
 ## Question 4
 The following recursive function takes three positive integer arguments:
