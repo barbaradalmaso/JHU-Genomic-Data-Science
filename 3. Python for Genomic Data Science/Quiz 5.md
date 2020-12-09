@@ -61,13 +61,10 @@ What can you say about the output of function1(3) and function2(3)?
 * function1 produces the output: 
 
     3 2 1 and function2 runs infinitely.
-
 * function1 produces the output: 3 2 1
 
     and function2 runs infinitely.
-    
 * The two functions produce the same output: 3 2 1
-
 * The two functions produce the same output: 1 2 3.
  
 
@@ -150,13 +147,10 @@ What will be printed after executing the following code?
 >>>f("Test function:")
 ```
 *   Outside function!
-
 *   Outside function!
     Test function:
     Inside function now!
-
 *   An error message.
-
 *   Test function, then an error message
 
 ## Question 9
