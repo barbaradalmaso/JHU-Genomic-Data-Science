@@ -18,5 +18,5 @@ Answer:
         b) CLCN7; 
         c) UNKL; 
         d) CACNA1H; 
-        e) USP.
+        e) USP7.
 ```
