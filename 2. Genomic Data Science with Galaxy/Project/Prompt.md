@@ -12,5 +12,10 @@ Answer:
 
 4. Number of variants with multiple alternate alleles: 62
 
-5. The 5 genes with the largest number of polymorphic sites are: I) RBFOX1; II) CLCN7; III) UNKL; IV) CACNA1H; V) USP.
+5. The 5 genes with the largest number of polymorphic sites are: 
+        a) RBFOX1; 
+        b) CLCN7; 
+        c) UNKL; 
+        d) CACNA1H; 
+        e) USP.
 ```
