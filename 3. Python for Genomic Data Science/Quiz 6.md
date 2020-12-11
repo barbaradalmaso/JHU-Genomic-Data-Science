@@ -27,6 +27,10 @@ print(sys.__version__)
 * A, B
 * A, B, C
 
+```
+Answer: B
+```
+
 ## Question 2
 What does the following code do?
 ```Python
@@ -39,6 +43,9 @@ dna = create_dna(1000000)
 * Creates a dna variable containing a string of length 1000000, containing the 'acgt' substring repeated.
 * Creates a dna variable containing a string of length 999999, and with the a,c,g,t characters.
 * Creates a dna variable containing a string of length less than 1000000, and with the a,c,g,t characters.
+```
+Answer: Creates a dna variable containing a string of length 1000000, and with the a,c,g,t characters.
+```
 
 ## Question 3
 The following functions are all supposed to count how many times a certain base (represented as a character variable in Python) 
@@ -71,15 +78,21 @@ Which of them is correct?
 * count3, count4 only
 * count2, count3 only
 * count1, count2 only
+```
+Answer: All of them are correct.
+```
 
 ## Question 4
 Which of the correct functions defined in the previous exercise is the fastest?
 
 Hint. You will need to generate a very large string to test them on, and the function clock() from the time module to time each function.
-* count5
-* count3
+* count5  
+* count3 
 * count4
 * count2
+```
+Answer: count4
+```
 
 ## Question 5
 If the PYTHONPATH environment variable is set, which of the following directories are searched for modules?
@@ -96,9 +109,12 @@ C) home directory
 D) installation dependent default path
 ```
 * A, B, and D
-* A only
+* A only 
 * A, B, and C
-* A and D
+* A and D 
+```
+Answer: A, B, and D
+```
 
 ## Question 6
 A student imports a module called dnautil in Python using the following command:
@@ -113,3 +129,6 @@ dir(dnautil)
 * Lists all the attributes of the dnautil module
 * Lists the gc and has_stop_codon functions
 * Lists all the functions in the dnautil module
+```
+Answer: Lists all the attributes of the dnautil module
+```
