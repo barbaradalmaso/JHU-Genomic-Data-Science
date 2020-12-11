@@ -169,16 +169,16 @@ for elem in L1:            # line 2
 
    L3.append(elem)    # line 4
 ```
-* The following two lines are introduced with the correct indentation after line 2: **XXX**
+* The following two lines are introduced with the correct indentation after line 2: 
 ```Python
       if elem in L3:
             pass
 ```
-* Change line 4 to: **XXX**
+* Change line 4 to: 
 ```Python
 L3=L3+elem
 ```
-* Add the following line (with the correct indentation) between lines 2 and 3: **XXX**
+* Add the following line (with the correct indentation) between lines 2 and 3: 
 ```Python
 if elem not in L3:
 ```
