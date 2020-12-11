@@ -103,7 +103,7 @@ What is the value returned by the compute function?
 * x+y
 * x+n*y
 ```
-Answer: x
+Answer: x+n*y
 ```
 
 ## Question 5
@@ -192,12 +192,12 @@ Answer: An error message.
 
 ## Question 9
 Which statement below is true about a function:
-* must have at least one parameter **XX*
+* must have at least one parameter
 * must always have a return statement
 * its arguments always appear within brackets
 * may have no parameters
 ```
-Answer: its arguments always appear within brackets
+Answer: may have no parameters
 ```
 
 ## Question 10
