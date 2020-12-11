@@ -8,11 +8,19 @@ This is the third course in the Genomic Big Data Science Specialization from Joh
 ## Grades
 ```
 Lecture 1 Quiz: 100%
+
 Lecture 2 Quiz: 100%
+
 Lecture 3 Quiz: 100%
+
 Lecture 4 Quiz: 100%
+
 Lecture 5 Quiz: 100%
+
 Lecture 6 Quiz: 100%
+
 Lecture 7 Quiz: 100%
+
 Lecture 8 Quiz: 100%
+
 Final Exam: 100%
