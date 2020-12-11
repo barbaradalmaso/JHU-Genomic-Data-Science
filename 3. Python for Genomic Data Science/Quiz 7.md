@@ -5,7 +5,10 @@ A student wants to write into a file called myfile, without deleting its existin
 * f = open('myfile', '+')
 * f = open('myfile', 'r')
 * f = open('myfile', 'b')
-*f = open('myfile', 'a')
+* f = open('myfile', 'a')
+```
+Answer: f = open('myfile', 'a')
+```
 
 ## Question 2
 Which of the following statements are true?
@@ -23,6 +26,9 @@ E) When you open a file for writing, if the file does not exist, an error occurs
 * A, B, and D only
 * A and B only
 * B, C, and D only
+```
+Answer: A, B, and D only
+```
 
 ## Question 3
 Examine the following three functions that take as argument a file name and return the extension of that file. For instance, 
@@ -40,9 +46,12 @@ def get_extension3(filename):
 ```
 Which of the these functions are doing exactly what they are supposed to do according to the description above?
 * get_extension3 only
-* None of them.
+* None of them. 
 * get_extension1 only
 * get_extension2 only
+```
+Answer: get_extension3 only
+```
 
 ## Question 4
 A student is running a Python program like this:
@@ -59,6 +68,9 @@ What is the value of the variable tocheck?
 * myfile2.fa
 * mergefasta.py
 * 'myfile2.fa'
+```
+Answer: 'myfile1.fa'
+```
 
 ## Question 5
 A student launches the Python interpreter from his home directory. His home directory contains another directory called 'mydir',  and 'mydir' 
@@ -74,3 +86,6 @@ import os
 * A variable f representing a file object will be created, and the first file in the directory 'mydir' will be opened for reading in text mode.
 * A variable f representing a file object will be created, and the first file in the directory 'mydir' will be opened.
 * An error will be produced stating that filename is not subscriptable.
+```
+Answer: An error will be produced stating that the file to be opened does not exist.
+```
