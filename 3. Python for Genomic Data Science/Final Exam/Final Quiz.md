@@ -4,7 +4,7 @@ Welcome to the final exam.
 
 If you haven't yet read the instructions, please exit the exam and read the Final Exam Instructions.
 
-Please run the following data set in the program(s) that you have written: dna2.fasta
+Please run the following data set in the program(s) that you have written: [dna2.fasta](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/3.%20Python%20for%20Genomic%20Data%20Science/Final%20Exam/dna2.fasta)
 
 If you created your program(s) correctly, you will be able to answer the questions below.
 ## Question 1
