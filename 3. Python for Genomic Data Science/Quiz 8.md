@@ -7,7 +7,7 @@ What module can we use to run BLAST over the internet in Biopython:
 * Bio.Blast.NCBIWWW
 * Bio.Blast.NCBIXML
 ```
-Answer:
+Answer: NCBIWWW.qblast()
 ```
 
 ## Question 2
@@ -17,7 +17,7 @@ Which one of the following modules is not part of the Bio.Blast package in Biopy
 * FastaIO
 * NCBIXML
 ```
-Answer:
+Answer: Applications
 ```
 
 ## Question 3
@@ -35,7 +35,7 @@ Hint. Identify the alignment with the lowest E value.
 * Viburnum dentatum
 * Nicotiana tabacum
 ```
-Answer:
+Answer: Rhazya stricta
 ```
 
 ## Question 4
@@ -52,7 +52,7 @@ Hint. Use the built-in function help you find out the methods of the Seq object.
 * print('reverse complement is %s' % complement(my_seq.reverse()))
 * print('reverse complement is %s' % my_seq.reverse())
 ```
-Answer:
+Answer: print('reverse complement is %s' % reverse(my_seq.complement()))
 ```
 
 ## Question 5
@@ -67,8 +67,8 @@ CTACGGTAGAG
 Its protein translation is:
 * ILASYLSYIPCSYGGAMFYVNPRSKDIIPKSYN*DLDMVLLFIVSEVMFFFALFRASSHSSLAPTV
 * FWPHIYPIYHVRMVARCSTSIHVRRTSYQSRTIRTSIWFYCLSYRRLCSFLLFFGLLLILLWHLR*
-* WASYLSYIPCSYGGAMFYVNPRSKDIIPKSYN*DLDMVLFCLSYRRLCSFLLFFGLLLILLWHLR*
-*FWPHIYPIYHVRMVARCSTSIHVRRTSYQSRTIRTSIWFYCLSYRRLCSFLLFFGLLLILLWHLR
+* WASYLSYIPCSYGGAMFYVNPRSKDIIPKSYN*DLDMVLFCLSYRRLCSFLLFFGLLLILLWHLR* 
+* FWPHIYPIYHVRMVARCSTSIHVRRTSYQSRTIRTSIWFYCLSYRRLCSFLLFFGLLLILLWHLR
 ```
-Answer:
+Answer: WASYLSYIPCSYGGAMFYVNPRSKDIIPKSYN*DLDMVLFCLSYRRLCSFLLFFGLLLILLWHLR* 
 ```
