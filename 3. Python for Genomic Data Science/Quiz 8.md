@@ -7,17 +7,17 @@ What module can we use to run BLAST over the internet in Biopython:
 * Bio.Blast.NCBIWWW
 * Bio.Blast.NCBIXML
 ```
-Answer: NCBIWWW.qblast()
+Answer: Bio.Blast.NCBIWWW
 ```
 
 ## Question 2
 Which one of the following modules is not part of the Bio.Blast package in Biopython:
-* Applications
+* Applications 
 * NCBIWWW
 * FastaIO
 * NCBIXML
 ```
-Answer: Applications
+Answer: FastaIO
 ```
 
 ## Question 3
@@ -35,7 +35,7 @@ Hint. Identify the alignment with the lowest E value.
 * Viburnum dentatum
 * Nicotiana tabacum
 ```
-Answer: Rhazya stricta
+Answer: Nicotiana tabacum
 ```
 
 ## Question 4
@@ -48,11 +48,11 @@ If my_seq is a Seq object, what is the correct Biopython code to print the rever
 Hint. Use the built-in function help you find out the methods of the Seq object.
 ```
 * print('reverse complement is %s' % my_seq.reverse_complement())
-* print('reverse complement is %s' % reverse(my_seq.complement()))
-* print('reverse complement is %s' % complement(my_seq.reverse()))
+* print('reverse complement is %s' % reverse(my_seq.complement())) 
+* print('reverse complement is %s' % complement(my_seq.reverse())) 
 * print('reverse complement is %s' % my_seq.reverse())
 ```
-Answer: print('reverse complement is %s' % reverse(my_seq.complement()))
+Answer: print('reverse complement is %s' % my_seq.reverse_complement())
 ```
 
 ## Question 5
