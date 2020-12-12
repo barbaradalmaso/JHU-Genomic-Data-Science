@@ -33,7 +33,7 @@ Boyer-Moore, true or false: for given P and T, it's possible that some character
 * True
 ```
 Answer: True
-
+```
 
 ## Question 4
 Consider a version of Boyer-Moore that uses only the bad character rule (no good suffix rule), and say our pattern P is a random string of 50% As and 50% Ts. In which scenario would you expect Boyer-Moore to skip the most alignments?
