@@ -5,7 +5,7 @@ How many times does ``AGGT`` or its reverse complement ``(ACCT)`` occur in the
 lambda virus genome? E.g. if ``AGGT`` occurs 10 times and ``ACCT`` occurs 12 times, you should report 22.
 
 ```
-Answer:
+Answer: 306
 ```
 
 ## Question 2
@@ -13,20 +13,20 @@ How many times does ```TTAA``` or its reverse complement occur in the lambda vir
 
 Hint: ```TTAA``` and its reverse complement are equal, so remember not to double count.
 ```
-Answer:
+Answer: 195
 ```
 
 ## Question 3
 What is the offset of the leftmost occurrence of ```ACTAAGT``` or its reverse complement in the Lambda virus genome? E.g. if the leftmost occurrence of 
 ```ACTAAGT``` is at offset 40 (0-based) and the leftmost occurrence of its reverse complement ```ACTTAGT``` is at offset 29, then report 29.
 ```
-Answer:
+Answer: 26028
 ```
 
 ## Question 4
 What is the offset of the leftmost occurrence of ```AGTCGA``` or its reverse complement in the Lambda virus genome?
 ```
-Answer:
+Answer: 450
 ```
 
 ## Question 5
@@ -36,13 +36,13 @@ For Questions 5 and 6, make a new version of the ```naive``` function called
 ```naive_2mm``` that allows up to 2 mismatches per occurrence. Unlike for the previous questions, **do not consider the reverse complement here**. We're looking for approximate matches for P itself, not its reverse complement.
 
 ```
-Answer:
+Answer: 191
 ```
 
 ## Question 6
 What is the offset of the leftmost occurrence of ```AGGAGGTT``` in the Lambda virus genome when allowing up to 2 mismatches?
 ```
-Answer:
+Answer: 49
 ```
 
 ## Question 7
@@ -60,5 +60,5 @@ This dataset has something wrong with it; one of the sequencing cycles is poor q
 
 Report which sequencing cycle has the problem. Remember that a sequencing cycle corresponds to a particular offset in all the reads. For example, if the leftmost read position seems to have a problem consistently across reads, report 0. If the fourth position from the left has the problem, report 3. Do whatever analysis you think is needed to identify the bad cycle. It might help to review the "Analyzing reads by position" video.
 ```
-Answer:
+Answer: 33
 ```
