@@ -4,19 +4,17 @@ Use the text box below to submit a short write-up describing your results includ
 ```
 Answer: 
 
-1. Number of single nucleotide variants: 2,327
+Briefly, analysis included quality control of the reads, alignment and finally variant calling and annotation of the varians. All three samples were analysed together in the end as a batch. The alignment of the reads was made against the hg19 genome assembly and the resulting BAM files were used as input for FreeBayes variant caller tool. Annotation and filltering only for the statistically signiticant variants of the VCF file gave the following results:
 
-2. Number of insertions/deletions variants: 268
+The analysis resulted in 2548 statistically significant(QUAL>50, Phred scaled score) variant sites, of which:
+(1) 2243 are SNPs,
+(2) 243 insertions/deletions; and
+(3) 68 MNPs.
 
-3. Number of multi-nucleotide variants: 23
+Of all the variant sites:
+(4) 2445 have at least 2 alternate alleles.
 
-4. Number of variants with multiple alternate alleles: 62
+Among the 236 genes that were found having variant sites, the following five seem to have largest number: 
+a) RBFOX1; b) LMF1; c) ABAT; d)CACNA1H; and e) ADCY9.
 
-5. The 5 genes with the largest number of polymorphic sites are: 
-       
-        a) RBFOX1; 
-        b) CLCN7; 
-        c) UNKL; 
-        d) CACNA1H; 
-        e) USP7.
 ```
