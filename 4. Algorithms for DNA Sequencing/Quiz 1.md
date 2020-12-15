@@ -42,12 +42,12 @@ Answer: Second-generation sequencing
 
 ## Question 5
 Which of the following pieces of information is not included in a sequencing read in the FASTQ format:
-* The sequence of base qualities corresponding to the bases **XX**
+* The sequence of base qualities corresponding to the bases
 * A "name" for the read
 * Which chromosome the read originated from
-* The sequence of bases that make up the read  **XX**
+* The sequence of bases that make up the read
 ```
-Answer: The sequence of bases that make up the read
+Answer: Which chromosome the read originated from
 ```
 
 ## Question 6
@@ -82,12 +82,12 @@ Answer: y - x + 1
 
 ## Question 9
 If the length of the pattern is x and the length of the text is y, the maximum possible number of character comparisons performed by the naive exact matching algorithm is:
-* x + y  **XX**
-* xy **XX**
+* x + y
+* xy 
 * y - x + 1
-* x(y - x + 1) **XX**
+* x(y - x + 1)
 ```
-Answer: x + y
+Answer: x(y - x + 1)
 ```
 
 ## Question 10
