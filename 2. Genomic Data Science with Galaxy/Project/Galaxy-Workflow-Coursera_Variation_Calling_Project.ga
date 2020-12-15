@@ -1,0 +1,309 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "",
+    "format-version": "0.1",
+    "name": "Coursera Variation Calling Project",
+    "steps": {
+        "0": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool FastQC",
+                    "name": "adapters"
+                },
+                {
+                    "description": "runtime parameter for tool FastQC",
+                    "name": "contaminants"
+                },
+                {
+                    "description": "runtime parameter for tool FastQC",
+                    "name": "input_file"
+                },
+                {
+                    "description": "runtime parameter for tool FastQC",
+                    "name": "limits"
+                }
+            ],
+            "label": null,
+            "name": "FastQC",
+            "outputs": [
+                {
+                    "name": "html_file",
+                    "type": "html"
+                },
+                {
+                    "name": "text_file",
+                    "type": "txt"
+                }
+            ],
+            "position": {
+                "bottom": 418.6166648864746,
+                "height": 237.11666870117188,
+                "left": 260,
+                "right": 420,
+                "top": 181.49999618530273,
+                "width": 160,
+                "x": 260,
+                "y": 181.49999618530273
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1",
+            "tool_shed_repository": {
+                "changeset_revision": "e7b2202befea",
+                "name": "fastqc",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"adapters\": {\"__class__\": \"RuntimeValue\"}, \"contaminants\": {\"__class__\": \"RuntimeValue\"}, \"input_file\": {\"__class__\": \"RuntimeValue\"}, \"kmers\": \"7\", \"limits\": {\"__class__\": \"RuntimeValue\"}, \"min_length\": \"\", \"nogroup\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.72+galaxy1",
+            "type": "tool",
+            "uuid": "2bd3aad9-e0e7-4e6e-aca6-575719000f4d",
+            "workflow_outputs": [
+                {
+                    "label": "FastQC on input dataset(s): Webpage",
+                    "output_name": "html_file",
+                    "uuid": "c9bb5e7d-87ec-4fa5-95cd-23576810f550"
+                },
+                {
+                    "label": "FastQC on input dataset(s): RawData",
+                    "output_name": "text_file",
+                    "uuid": "92c11ba9-3f9d-4651-8be2-bcac5304f5e8"
+                }
+            ]
+        },
+        "1": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1",
+            "errors": null,
+            "id": 1,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Map with BWA-MEM",
+                    "name": "fastq_input"
+                }
+            ],
+            "label": null,
+            "name": "Map with BWA-MEM",
+            "outputs": [
+                {
+                    "name": "bam_output",
+                    "type": "bam"
+                }
+            ],
+            "position": {
+                "bottom": 253.76665878295898,
+                "height": 123.51666259765625,
+                "left": 489.24999237060547,
+                "right": 649.2499923706055,
+                "top": 130.24999618530273,
+                "width": 160,
+                "x": 489.24999237060547,
+                "y": 130.24999618530273
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1",
+            "tool_shed_repository": {
+                "changeset_revision": "3fe632431b68",
+                "name": "bwa",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"analysis_type\": {\"analysis_type_selector\": \"illumina\", \"__current_case__\": 0}, \"fastq_input\": {\"fastq_input_selector\": \"paired_collection\", \"__current_case__\": 2, \"fastq_input1\": {\"__class__\": \"RuntimeValue\"}, \"iset_stats\": \"\"}, \"reference_source\": {\"reference_source_selector\": \"cached\", \"__current_case__\": 0, \"ref_file\": \"hg19\"}, \"rg\": {\"rg_selector\": \"do_not_set\", \"__current_case__\": 3}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.7.17.1",
+            "type": "tool",
+            "uuid": "11582045-7099-45f4-8f41-a5ca59b4c60e",
+            "workflow_outputs": [
+                {
+                    "label": "Map with BWA-MEM on input dataset(s) (mapped reads in BAM format)",
+                    "output_name": "bam_output",
+                    "uuid": "acc11d0e-0cb9-46a4-89f1-56f6e9e23260"
+                }
+            ]
+        },
+        "2": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.3.1",
+            "errors": null,
+            "id": 2,
+            "input_connections": {
+                "reference_source|batchmode|input_bams": {
+                    "id": 1,
+                    "output_name": "bam_output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "FreeBayes",
+            "outputs": [
+                {
+                    "name": "output_vcf",
+                    "type": "vcf"
+                }
+            ],
+            "position": {
+                "bottom": 399.3833351135254,
+                "height": 90.88333129882812,
+                "left": 673.2499694824219,
+                "right": 833.2499694824219,
+                "top": 308.50000381469727,
+                "width": 160,
+                "x": 673.2499694824219,
+                "y": 308.50000381469727
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/freebayes/freebayes/1.3.1",
+            "tool_shed_repository": {
+                "changeset_revision": "ef2c525bd8cd",
+                "name": "freebayes",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"coverage_options\": {\"coverage_options_selector\": \"do_not_set\", \"__current_case__\": 1}, \"options_type\": {\"options_type_selector\": \"simple\", \"__current_case__\": 1}, \"reference_source\": {\"reference_source_selector\": \"cached\", \"__current_case__\": 0, \"batchmode\": {\"processmode\": \"merge\", \"__current_case__\": 1, \"input_bams\": {\"__class__\": \"RuntimeValue\"}}, \"ref_file\": \"hg19\"}, \"target_limit_type\": {\"target_limit_type_selector\": \"do_not_limit\", \"__current_case__\": 0}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.3.1",
+            "type": "tool",
+            "uuid": "4e89659e-454e-4a64-8c11-9f47d8b61940",
+            "workflow_outputs": [
+                {
+                    "label": "FreeBayes on input dataset(s) (variants)",
+                    "output_name": "output_vcf",
+                    "uuid": "41a0f3f2-90ff-43b0-b181-268d613089b1"
+                }
+            ]
+        },
+        "3": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpSift_filter/3.4",
+            "errors": null,
+            "id": 3,
+            "input_connections": {
+                "input": {
+                    "id": 2,
+                    "output_name": "output_vcf"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool SnpSift Filter",
+                    "name": "input"
+                }
+            ],
+            "label": null,
+            "name": "SnpSift Filter",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "vcf"
+                }
+            ],
+            "position": {
+                "bottom": 221.8833351135254,
+                "height": 90.88333129882812,
+                "left": 867.7500152587891,
+                "right": 1027.750015258789,
+                "top": 131.00000381469727,
+                "width": 160,
+                "x": 867.7500152587891,
+                "y": 131.00000381469727
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpSift_filter/3.4",
+            "tool_shed_repository": {
+                "changeset_revision": "e8adfc4c0a6b",
+                "name": "snpeff",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"expr\": \"QUAL>50\", \"filtering\": {\"mode\": \"entries\", \"__current_case__\": 0}, \"input\": {\"__class__\": \"RuntimeValue\"}, \"inverse\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "3.4",
+            "type": "tool",
+            "uuid": "9b2c226a-64b1-4330-8750-fc98addab382",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "dc265c32-41f0-4ec6-9ce1-020f738a170e"
+                }
+            ]
+        },
+        "4": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.3+T.galaxy1",
+            "errors": null,
+            "id": 4,
+            "input_connections": {
+                "input": {
+                    "id": 3,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool SnpEff eff:",
+                    "name": "input"
+                },
+                {
+                    "description": "runtime parameter for tool SnpEff eff:",
+                    "name": "intervals"
+                },
+                {
+                    "description": "runtime parameter for tool SnpEff eff:",
+                    "name": "transcripts"
+                }
+            ],
+            "label": null,
+            "name": "SnpEff eff:",
+            "outputs": [
+                {
+                    "name": "snpeff_output",
+                    "type": "vcf"
+                },
+                {
+                    "name": "statsFile",
+                    "type": "html"
+                }
+            ],
+            "position": {
+                "bottom": 511.8666648864746,
+                "height": 229.11666870117188,
+                "left": 1094.2500305175781,
+                "right": 1254.2500305175781,
+                "top": 282.74999618530273,
+                "width": 160,
+                "x": 1094.2500305175781,
+                "y": 282.74999618530273
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.3+T.galaxy1",
+            "tool_shed_repository": {
+                "changeset_revision": "74aebe30fb52",
+                "name": "snpeff",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"annotations\": null, \"chr\": \"\", \"csvStats\": \"false\", \"filter\": {\"specificEffects\": \"no\", \"__current_case__\": 0}, \"filterOut\": null, \"generate_stats\": \"true\", \"input\": {\"__class__\": \"RuntimeValue\"}, \"inputFormat\": \"vcf\", \"intervals\": {\"__class__\": \"RuntimeValue\"}, \"noLog\": \"true\", \"offset\": \"default\", \"outputConditional\": {\"outputFormat\": \"vcf\", \"__current_case__\": 0}, \"snpDb\": {\"genomeSrc\": \"cached\", \"__current_case__\": 0, \"genomeVersion\": \"hg19\", \"reg_section\": {\"regulation\": \"\"}}, \"spliceRegion\": {\"setSpliceRegions\": \"no\", \"__current_case__\": 0}, \"spliceSiteSize\": \"2\", \"transcripts\": {\"__class__\": \"RuntimeValue\"}, \"udLength\": \"5000\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "4.3+T.galaxy1",
+            "type": "tool",
+            "uuid": "8c046d66-596d-4419-a299-7fde37e21b5a",
+            "workflow_outputs": [
+                {
+                    "label": "SnpEff eff: on input dataset(s) - HTML stats",
+                    "output_name": "statsFile",
+                    "uuid": "fc24d0e6-d5eb-4f7e-935a-b60e75c632fd"
+                },
+                {
+                    "label": null,
+                    "output_name": "snpeff_output",
+                    "uuid": "af024938-d390-448d-be74-54cf8be3ddc2"
+                }
+            ]
+        }
+    },
+    "tags": [],
+    "uuid": "7a0fc95e-de93-45e7-9edb-928b51ffa7db",
+    "version": 1
+}
