@@ -4,19 +4,19 @@
 How many alignments does the naive exact matching algorithm 
 try when matching the string ```GGCGCGGTGGCTCACGCCTGTAATCCCAGCACTTTGGGAGGCCGAGG``` (derived from human Alu sequences) to the excerpt of human chromosome 1? 
 ```
-Answer:
+Answer: 56922 
 ```
 
 ## Question 2
 How many character comparisons does the naive exact matching algorithm try when matching the string ```GGCGCGGTGGCTCACGCCTGTAATCCCAGCACTTTGGGAGGCCGAGG``` (derived from human Alu sequences) to the excerpt of human chromosome 1?
 ```
-Answer:
+Answer: 799954 
 ```
 
 ## Question 3
 How many alignments does Boyer-Moore try when matching the string ```GGCGCGGTGGCTCACGCCTGTAATCCCAGCACTTTGGGAGGCCGAGG``` (derived from human Alu sequences) to the excerpt of human chromosome 1?
 ```
-Answer:
+Answer: 984143
 ```
 
 ## Question 4
@@ -57,7 +57,7 @@ Hint 1: Multiple index hits might direct you to the same match multiple times, b
 
 Hint 2: You can check your work by comparing the output of your new function to that of the ```naive_2mm``` function implemented in the previous module.
 ```
-Answer:
+Answer: 19
 ```
 
 ## Question 5
@@ -65,7 +65,7 @@ Using the instructions given in Question 4, how many total index hits are there 
 
 Hint: You should be able to use the ```boyer_moore``` function (or the slower ```naive``` function) to double-check your answer.
 ```
-Answer:
+Answer: 90
 ```
 
 ## Question 6
@@ -136,5 +136,5 @@ because the second subsequence ```TTT``` is in the index. Write a function that,
 
 When using this function, how many total index hits are there when searching for ```GGCGCGGTGGCTCACGCCTGTAAT``` with up to 2 substitutions in the excerpt of human chromosome 1? 
 ```
-Answer:
+Answer: 79
 ```
