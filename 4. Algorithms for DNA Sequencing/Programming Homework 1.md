@@ -60,5 +60,5 @@ This dataset has something wrong with it; one of the sequencing cycles is poor q
 
 Report which sequencing cycle has the problem. Remember that a sequencing cycle corresponds to a particular offset in all the reads. For example, if the leftmost read position seems to have a problem consistently across reads, report 0. If the fourth position from the left has the problem, report 3. Do whatever analysis you think is needed to identify the bad cycle. It might help to review the "Analyzing reads by position" video.
 ```
-Answer: 33
+Answer: 66
 ```
