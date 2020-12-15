@@ -10,13 +10,13 @@ Answer: 56922
 ## Question 2
 How many character comparisons does the naive exact matching algorithm try when matching the string ```GGCGCGGTGGCTCACGCCTGTAATCCCAGCACTTTGGGAGGCCGAGG``` (derived from human Alu sequences) to the excerpt of human chromosome 1?
 ```
-Answer: 799954 
+Answer: 127974 
 ```
 
 ## Question 3
 How many alignments does Boyer-Moore try when matching the string ```GGCGCGGTGGCTCACGCCTGTAATCCCAGCACTTTGGGAGGCCGAGG``` (derived from human Alu sequences) to the excerpt of human chromosome 1?
 ```
-Answer: 984143
+Answer: 165191
 ```
 
 ## Question 4
