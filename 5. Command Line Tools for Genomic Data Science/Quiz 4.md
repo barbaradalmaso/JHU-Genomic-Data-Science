@@ -53,7 +53,7 @@ Answer: cufflinks, cuffcompare
 
 ## Question 6
 Which of the following is FALSE about the gene annotations in the following GTF snippet:
-```
+```python
 chr1  MGF gene  3413609 3671498 . - . gene_id 
     "MG051951";
 chr1  MGF transcript  3413609 3416344 . - .gene_id 
@@ -81,7 +81,7 @@ Answer: The two transcripts for gene MG051951 overlap on the genome.
 
 ## Question 7
 What does the following code NOT do:
-```
+```python
 BWT2IDX=/home/me/genomes/hg20/hg20
 ANNOT=/home/me/genomes/hg20/myannot.gtf
 ANNOTIDX=/home/me/genomes/hg20/myannot/myannot
@@ -104,7 +104,7 @@ Answer: Report spliced reads with at most 6 mismatches in the anchor site
 
 ## Question 8
 What does the following code NOT do:
-```
+```python
 TOPHATDIR=/home/florea/Tophat/
 mkdir –p Test1
 cd Test1
@@ -121,7 +121,7 @@ Answer: Use the default reference transcript annotation to guide assembly
 
 ## Question 9
 Which of the following is NOT described in the following summary file produced by tophat:
-```
+```python
 Left reads:
           Input     :  60586968
            Mapped   :  58163843 (96.0% of input)
@@ -148,7 +148,7 @@ Answer: The reads were 100 bp long
 
 ## Question 10
 Which of the following is NOT TRUE about the output below, obtained from a cuffdiff differential expression analysis:
-```
+```python
 XLOC_000002 XLOC_000002 AT1G01020 1:5927-8737 q1  q2  OK  1
     .13032  3.48406 1.62404 0.694576  0.5277  0.998846  no
 XLOC_000004 XLOC_000004 AT1G01073 1:44676-44787 q1  q2  
