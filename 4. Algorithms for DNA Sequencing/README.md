@@ -6,7 +6,6 @@ We will learn computational methods -- algorithms and data structures -- for ana
 
 ## Grades
 ```
-
 Module 1: 100%
 
 Programming Homework 1: 100%
