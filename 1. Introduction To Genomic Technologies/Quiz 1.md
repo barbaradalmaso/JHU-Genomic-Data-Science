@@ -24,7 +24,7 @@ Which of the following is one of the major drivers of the sequencing revolution 
 Decreased cost of sequencing
 ```
 
-# Question 3
+## Question 3
 Which of the following is an exclusive characteristic of genomics compared to traditional biology?
 * Studies considering the entire genome
 * Targeted studies of one or a few genes
