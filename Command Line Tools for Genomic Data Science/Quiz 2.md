@@ -178,5 +178,5 @@ bedtools intersect –wo –a A.bed -b B.bed  | cut -f4-6 | sort –u
 * 9 , 2, 2
 * 3, 2, 2
 ```
-Answer:
+Answer: 3, 2, 2
 ```
