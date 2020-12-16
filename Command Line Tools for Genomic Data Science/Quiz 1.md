@@ -15,11 +15,7 @@ Which of the following commands can be using to compress the content of a file?
 * cat
 
 ## Question 3
-The file “months” lists each of the 12 months on a separate line, and no further lines. What would be the result if the following command was run:
-```
-cat months | head -1000 | wc –l
-```
-
+The file “months” lists each of the 12 months on a separate line, and no further lines. What would be the result if the following command was run: ```cat months | head -1000 | wc –l```
 * July
 * 12
 * April
@@ -33,15 +29,14 @@ What is the effect of using the pipe operator ‘|’ in a sequence of commands:
 * Re-direct the standard input or standard output of a command
 
 ## Question 5
-If typing ‘pwd’ produces “/home/userA/Coursera/L1/”, which of the following commands will list the file content of the current directory?
+If typing ```‘pwd’``` produces ```“/home/userA/Coursera/L1/”```, which of the following commands will list the file content of the current directory?
 * listdir .
 * ls /home/userA/Coursera/L1
 * mkdir L1
 * more *.txt
 
 ## Question 6
-Suppose your current working directory is “/home/Coursera/L1/”, and “peach”, “apple” and “pear” are subdirectories, each containing a single file named “genome”. What would be the current directory, as reported by running the ‘pwd’ command, after each of the four commands in the sequence below:
-
+Suppose your current working directory is ```“/home/Coursera/L1/”```, and “peach”, “apple” and “pear” are subdirectories, each containing a single file named “genome”. What would be the current directory, as reported by running the ‘pwd’ command, after each of the four commands in the sequence below:
 ```
       cd apple
       rm *
@@ -84,7 +79,6 @@ January 1 winter
 …
 December 12 winter
 ```
-
 What would be the sequence of outputs for the following commands: 
 ```
 cut -d ' ' -f1,3 seasons | sort -u | wc -l" and "cut -f1 
