@@ -16,7 +16,7 @@ Answer: 984143
 ## Question 3
 How many alignments does Boyer-Moore try when matching the string ```GGCGCGGTGGCTCACGCCTGTAATCCCAGCACTTTGGGAGGCCGAGG``` (derived from human Alu sequences) to the excerpt of human chromosome 1?
 ```
-Answer: 56922
+Answer: 127974
 ```
 
 ## Question 4
