@@ -1,5 +1,5 @@
 # Module 4
-
+ 
 ## Question 1
 The slow (sometimes called “brute force”) algorithm for finding the shortest common superstring of the strings in set S involves:
 * Iteratively removing strings from S that don’t belong in the superstring XXX
