@@ -16,9 +16,10 @@ Which of the following commands can be using to compress the content of a file?
 
 ## Question 3
 The file “months” lists each of the 12 months on a separate line, and no further lines. What would be the result if the following command was run:
-```Python
-```cat months | head -1000 | wc –l```
 ```
+cat months | head -1000 | wc –l
+```
+
 * July
 * 12
 * April
@@ -41,13 +42,11 @@ If typing ‘pwd’ produces “/home/userA/Coursera/L1/”, which of the follow
 ## Question 6
 Suppose your current working directory is “/home/Coursera/L1/”, and “peach”, “apple” and “pear” are subdirectories, each containing a single file named “genome”. What would be the current directory, as reported by running the ‘pwd’ command, after each of the four commands in the sequence below:
 
-```Python
 ```
       cd apple
       rm *
       cd ../..
       mv apple plum
-```
 ```
 * 
 ```Python
@@ -80,17 +79,16 @@ L1
 
 ## Question 7
 Consider the file “seasons” with the following columns separated by spaces ‘ ‘:
-```Python
 ```
 January 1 winter
 …
 December 12 winter
 ```
-```
+
 What would be the sequence of outputs for the following commands: 
-```Python
-```cut -d ' ' -f1,3 seasons | sort -u | wc -l" and "cut -f1 
-    seasons | sort | uniq -c | wc -l```
+```
+cut -d ' ' -f1,3 seasons | sort -u | wc -l" and "cut -f1 
+    seasons | sort | uniq -c | wc -l
 ```
 * 5, 10
 * 4, 3
