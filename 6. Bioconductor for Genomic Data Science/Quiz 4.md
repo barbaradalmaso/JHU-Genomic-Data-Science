@@ -1,6 +1,6 @@
 # Quiz 4
 
-The (yeastRNASeq)[http://bioconductor.org/packages/release/bioc/html/yeastRNASeq.html]
+The [yeastRNASeq](http://bioconductor.org/packages/release/bioc/html/yeastRNASeq.html)
 experiment data package contains FASTQ files from an RNA seq experiment in yeast. When the package is installed, you can access one of the FASTQ files 
 by the path given by 
 ```r
@@ -23,7 +23,7 @@ This is a continuation of Question 1.
 * 31.21
 
 ## Question 3
-The (leeBamViews)[http://bioconductor.org/packages/release/bioc/html/leeBamViews.html] experiment data package contains aligned BAM files from an RNA seq experiment in yeast (the same experiment as in Questions 1 and 2, but that is not pertinent to the question). You can access one of the BAM files by the path given by
+The [leeBamViews](http://bioconductor.org/packages/release/bioc/html/leeBamViews.html) experiment data package contains aligned BAM files from an RNA seq experiment in yeast (the same experiment as in Questions 1 and 2, but that is not pertinent to the question). You can access one of the BAM files by the path given by
 ```r
 bamFilePath <- system.file("bam", "isowt5_13e.bam", package="leeBamViews")
 ```
@@ -87,7 +87,7 @@ Question: How many genes are differentially expressed between the two groups at 
 * 22
 
 ## Question 8
-An example 450k dataset is contained in the (minfiData)[http://bioconductor.org/packages/release/bioc/html/minfiData.html] package. This dataset contains 6 samples; 3 cancer and 3 normals. Cancer has been shown to be globally hypo-methylated (less methylated) compared to normal tissue of the same kind.
+An example 450k dataset is contained in the [minfiData](http://bioconductor.org/packages/release/bioc/html/minfiData.html) package. This dataset contains 6 samples; 3 cancer and 3 normals. Cancer has been shown to be globally hypo-methylated (less methylated) compared to normal tissue of the same kind.
 
 Take the RGsetEx dataset in this package and preprocess it with the preprocessFunnorm function. For each sample, compute the average Beta value (percent methylation) across so-called OpenSea loci.
 
@@ -110,12 +110,12 @@ The Caco2 cell line is a colon cancer cell line profiled by ENCODE. Obtain the n
 * 29265
 
 ## Question 10
-The (zebrafishRNASeq)[http://bioconductor.org/packages/release/bioc/html/zebrafishRNASeq.html] package contains summarized data from an RNA-seq experiment in zebrafish in the form of a data.frame called 
+The [zebrafishRNASeq](http://bioconductor.org/packages/release/bioc/html/zebrafishRNASeq.html) package contains summarized data from an RNA-seq experiment in zebrafish in the form of a data.frame called 
 ```zfGenes``` The experiment compared 3 control samples to 3 treatment samples.
 
 Each row is a transcript; the data.frame contains 92 rows with spikein transcripts; these have a rowname starting with “ERCC”. Exclude these rows from the analysis.
 
-Use (DESeq2)[http://bioconductor.org/packages/release/bioc/html/DESeq2.html]
+Use [DESeq2](http://bioconductor.org/packages/release/bioc/html/DESeq2.html)
 to perform a differential expression analysis between control and treatment. Do not discard (filter) genes and use the ```padj``` results output as the p-value.
 
 ***Question:*** How many features are differentially expressed between control and treatment (ie. 
