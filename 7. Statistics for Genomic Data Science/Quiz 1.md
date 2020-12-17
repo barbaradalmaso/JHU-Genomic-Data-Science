@@ -75,7 +75,7 @@ Suppose that you have measured ChIP-Seq data from 10 healthy individuals and 10 
   (c) By comparing the average measurements on the healthy individuals to the measurements on the individuals with cancer.
 *  (a) & (b) By looking at variation across samples from 10 different healthy individuals. 
 
-  (c) by comparing the average measurements on the healthy individuals to the measurements on the individuals with cancer. 
+    (c) by comparing the average measurements on the healthy individuals to the measurements on the individuals with cancer. 
 
 ## Question 5
 Load the Bottomly and the Bodymap data sets with the following code:
@@ -169,8 +169,45 @@ Make an MA-plot of the first sample versus the second sample using the log2 tran
 * The plots look pretty similar, but there are two strong diagonal stripes (corresponding to the zero count genes) in the ```rlog``` plot. In both cases, the genes in the middle of the expression distribution show the biggest differences, but the low abundance genes seem to show smaller differences with the ```log2``` transform.
 * The plots look pretty similar, but the ```log2``` plot seems to do a better job of shrinking the low abundance genes toward each other. In both cases, the genes in the middle of the expression distribution show the biggest differences.
 
+## Question 9
+Load the Montgomery and Pickrell eSet:
+```r
+con =url("http://bowtie-bio.sourceforge.net/recount/ExpressionSets/montpick_eset.RData")
+load(file=con)
+close(con)
+mp = montpick.eset
+pdata=pData(mp)
+edata=as.data.frame(exprs(mp))
+fdata = fData(mp)
+```
+Cluster the data in three ways:
 
+1. With no changes to the data
+2. After filtering all genes with ```rowMeansrowMeans``` less than 100
+3. After taking the ```log2``` transform of the data without filtering
 
+Color the samples by which study they came from (Hint: consider using the function ```myplclust.R``` in the package ```rafalib``` available from CRAN and looking at the argument ```lab.col.```
 
+How do the methods compare in terms of how well they cluster the data by study? Why do you think that is?
+* Clustering with or without filtering is about the same. Clustering after the log2 transform shows better clustering with respect to the study variable. The likely reason is that the highly skewed distribution doesn't match the Euclidean distance metric being used in the clustering example.
+* Clustering is identical with all three approaches and they show equal clustering. The distance is an average over all the dimensions so it doesn't change. 
+* Clustering with or without log2 transform is about the same. Clustering after filtering shows better clustering with respect to the study variable. The reason is that the lowly expressed genes have some extreme outliers that skew the calculation. 
+* Clustering is identical with all three approaches and they show equal clustering. The log2 transform is a monotone transformation so it doesn't affect the clustering.
 
-
+## Question 10
+Load the Montgomery and Pickrell eSet:
+```r
+con =url("http://bowtie-bio.sourceforge.net/recount/ExpressionSets/montpick_eset.RData")
+load(file=con)
+close(con)
+mp = montpick.eset
+pdata=pData(mp)
+edata=as.data.frame(exprs(mp))
+fdata = fData(mp)
+```
+Cluster the samples using k-means clustering after applying the 
+```log2``` transform (be sure to add 1). Set a seed for reproducible results (use ```set.seed(1235)```). If you choose two clusters, do you get the same two clusters as you get if you use the ```cutree``` function to cluster the samples into two groups? Which cluster matches most closely to the study labels?
+* They produce different clusterings with hierarchical clustering more closely matching the study variable. K-means clustering is too random to pick up the study difference. 
+* They produce different answers, with hierarchical clustering giving a much more unbalanced clustering. The k-means clustering matches study better. 
+* They produce different answers, with k-means clustering giving a much more unbalanced clustering. The hierarchical clustering matches study better. 
+* They produce the same answers and match the study variable equally well. 
