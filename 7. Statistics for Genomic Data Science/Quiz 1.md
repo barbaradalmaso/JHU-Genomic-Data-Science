@@ -139,7 +139,7 @@ pie3D(pdata_bm$num.tech.reps,labels=pdata_bm$tissue.type)
 * The data could much more easily be shown as a heatmap. 
 ### Answer
 ```
-The “mixture” category is split across multiple wedges.
+The data could much more easily be shown as a heatmap. 
 ```
 
 ## Question 7
