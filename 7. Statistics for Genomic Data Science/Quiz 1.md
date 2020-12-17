@@ -35,9 +35,9 @@ plot(x,pch=19,col="dodgerblue")
 y = rbinom(20,size=1,prob=0.5)
 table(y)
 ```
-* The plot and table are random the first time you knit the document. They are identical the second time you knit the document. After removing the folders ```test_cache``` and ```test_files``` they generate new random versions.
 * The table is random each time you knit the document, but the plot is always the same after you knit it the first time.
-* The plot and table are random the first time you knit the document. They are identical the second time you knit the document. After removing the folders ```test_cache``` and ```test_files``` are still identical.
+* The plot is random the first time you knit the document. It is identical to the first time the second time you knit the document. After removing test_cache and test_files they generate new random versions.
+* The plot and table are random the first time you knit the document. They are identical the second time you knit the document. After removing the folders test_cache and test_files they are still identical.
 * The plot and table are random every time you kint the document, except for the last time.
 ### Answer
 ```
@@ -90,9 +90,9 @@ Suppose that you have measured ChIP-Seq data from 10 healthy individuals and 10 
     (c) by comparing the average measurements on the healthy individuals to the measurements on the individuals with cancer. 
 ### Answer
 ```
-(a) By looking at variation across samples from 10 different individuals with cancer
-(b) By looking at variability between the measurements on the two sub-samples from the same sample and
-(c) By comparing the average measurements on the healthy individuals to the measurements on the individuals with cancer.
+(a) By looking at variation across samples from 10 different healthy individuals 
+(b) By looking at variability between the measurements on the two sub-samples from the same sample and 
+(c) by comparing the average measurements on the healthy individuals to the measurements on the individuals with cancer. 
 ```
 
 ## Question 5
@@ -111,10 +111,10 @@ bm = bodymap.eset
 pdata_bm=pData(bm)
 ```
 Just considering the phenotype data what are some reasons that the Bottomly data set is likely a better experimental design than the Bodymap data? Imagine the question of interest in the Bottomly data is to compare strains and in the Bodymap data it is to compare tissues.
+* The covariates in the Bottomly data set (experiment number, lane number)  are balanced with respect to strain. The covariates in the Bodymap data set (gender, age, number of technical replicates) are not balanced with respect to tissue.   
+* The Bottomly data has a smaller sample size than the Bodymap data.
 * The Bodymap data has measured more levels of the outcome of interest (tissues) than the Bottomly data has measured (strains).
-* The Bottomly data set does not measure the age of the mice.
-* Most of the tissues in the Bodymap data have a consistent number of technical replicates (2).
-* The number of technical replicates in the Bodymap data varies, but the number in the Bottomly data is consistent.
+* The Bodymap data has more technical replicates than the Bottomly data.
 ### Answer
 ```
 The covariates in the Bottomly data set (experiment number, lane number) are balanced with respect to strain. The covariates in the Bodymap data set (gender, age, number of technical replicates) are not balanced with respect to tissue.
@@ -155,25 +155,26 @@ Which of the following code chunks will make a heatmap of the 500 most highly ex
 * The highly expressed samples are next to each other.
 ```r
 row_sums = rowSums(edata)
-index = which(rank(-row_sums) < 500 )
-heatmap(edata[index,],Rowv=NA)
+edata = edata[order(-row_sums),]
+index = 1:500
+heatmap(edata[index,],Rowv=NA,Colv=NA)
 ```
 * The highly expressed samples are next to each other.
 ```r
 row_sums = rowSums(edata)
-index = which(rank(-row_sums) < 500 )
-heatmap(edata[index,],Rowv=NA,Colv=NA)
+index = which(rank(row_sums) < 500 )
+heatmap(edata[index,],Colv=NA)
 ```
 * The highly expressed samples are not next to each other.
 ```r
 row_sums = rowSums(edata)
+edata = edata[order(row_sums),]
 index = which(rank(-row_sums) < 500 )
-heatmap(edata[index,],Rowv=NA)
+heatmap(edata[index,],Rowv=NA,Colv=NA)
 ```
 * No they are not next to each other.
 ```r
 row_sums = rowSums(edata)
-edata = edata[order(row_sums),]
 index = which(rank(-row_sums) < 500 )
 heatmap(edata[index,],Rowv=NA,Colv=NA)
 ```
@@ -260,7 +261,7 @@ Cluster the samples using k-means clustering after applying the
 * They produce the same answers and match the study variable equally well. 
 ### Answer
 ```
-They produce different answers. The k-means clustering matches study better. Hierarchical clustering would look better if we went farther down the tree but the top split doesn’t perfectly describe the study variable.
+They produce different answers, with hierarchical clustering giving a much more unbalanced clustering. The k-means clustering matches study better.
 ```
 ![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archive/matplot.png)
 ![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archive/cutree.png)
