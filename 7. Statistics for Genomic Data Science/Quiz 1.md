@@ -132,7 +132,7 @@ pdata_bm=pData(bm)
 library(plotrix)
 pie3D(pdata_bm$num.tech.reps,labels=pdata_bm$tissue.type)
 ```
-![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archive/unnamed-chunk-5-1.png)
+![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archives/Week%1/unnamed-chunk-5-1.png)
 * The plot uses rainbow colors which are hard for color blind individuals to see. 
 * Humans are much worse at comparing angles than comparing position or length.
 * The plot would be much easier to see if the pie chart were rotated by 90 degrees from its current position. 
@@ -185,7 +185,7 @@ edata = edata[order(-row_sums),]
 index = 1:500
 heatmap(edata[index,],Rowv=NA,Colv=NA)
 ```
-![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archive/heatmap1.png)
+![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archives/Week%1/heatmap1.png)
 
 ## Question 8
 Load the Bodymap data using the following code:
@@ -207,8 +207,8 @@ Make an MA-plot of the first sample versus the second sample using the log2 tran
 ```
 The plots look pretty similar, but the rlog transform seems to shrink the low abundance genes more. In both cases, the genes in the middle of the expression distribution show the biggest differences.
 ```
-![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archive/Graph1.png)
-![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archive/Graph2.png)
+![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archives/Week%1/Graph1.png)
+![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archives/Week%1/Graph2.png)
 
 ## Question 9
 Load the Montgomery and Pickrell eSet:
@@ -238,9 +238,9 @@ How do the methods compare in terms of how well they cluster the data by study? 
 ```
 Clustering with or without filtering is about the same. Clustering after the log2 transform shows better clustering with respect to the study variable. The likely reason is that the highly skewed distribution doesn't match the Euclidean distance metric being used in the clustering example.
 ```
-![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archive/origin.png)
-![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archive/remove%20low%20expression.png)
-![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archive/log2%20transform.png)
+![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archives/Week%1/origin.png)
+![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archives/Week%1/remove%20low%20expression.png)
+![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archives/Week%1/log2%20transform.png)
 
 ## Question 10
 Load the Montgomery and Pickrell eSet:
@@ -263,5 +263,5 @@ Cluster the samples using k-means clustering after applying the
 ```
 They produce different answers, with hierarchical clustering giving a much more unbalanced clustering. The k-means clustering matches study better.
 ```
-![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archive/matplot.png)
-![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archive/cutree.png)
+![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archives/Week%1/matplot.png)
+![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archives/Week%1/cutree.png)
