@@ -258,7 +258,7 @@ normal - cancer
 * 0.0054
 ### Answer
 ```
-0.08863657
+0.0846
 ```
 
 ## Question 9
@@ -346,5 +346,5 @@ dim(sigRes)[1]
 * 30
 ### Answer
 ```
-116
+87
 ```
