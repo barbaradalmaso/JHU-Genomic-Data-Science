@@ -116,6 +116,59 @@ pie3D(pdata_bm$num.tech.reps,labels=pdata_bm$tissue.type)
 * The plot would be much easier to see if the pie chart were rotated by 90 degrees from its current position. 
 * The data could much more easily be shown as a heatmap. 
 
+## Question 7
+Load the Bottomly data:
+```r
+con =url("http://bowtie-bio.sourceforge.net/recount/ExpressionSets/bodymap_eset.RData")
+load(file=con)
+close(con)
+bm = bodymap.eset
+edata = exprs(bm)
+```
+Which of the following code chunks will make a heatmap of the 500 most highly expressed genes (as defined by total count), without re-ordering due to clustering? Are the highly expressed samples next to each other in sample order?
+* The highly expressed samples are next to each other.
+```r
+row_sums = rowSums(edata)
+index = which(rank(-row_sums) < 500 )
+heatmap(edata[index,],Rowv=NA)
+```
+* The highly expressed samples are next to each other.
+```r
+row_sums = rowSums(edata)
+index = which(rank(-row_sums) < 500 )
+heatmap(edata[index,],Rowv=NA,Colv=NA)
+```
+* The highly expressed samples are not next to each other.
+```r
+row_sums = rowSums(edata)
+index = which(rank(-row_sums) < 500 )
+heatmap(edata[index,],Rowv=NA)
+```
+* No they are not next to each other.
+```r
+row_sums = rowSums(edata)
+edata = edata[order(row_sums),]
+index = which(rank(-row_sums) < 500 )
+heatmap(edata[index,],Rowv=NA,Colv=NA)
+```
+
+## Question 8
+Load the Bodymap data using the following code:
+```r
+con =url("http://bowtie-bio.sourceforge.net/recount/ExpressionSets/bodymap_eset.RData")
+load(file=con)
+close(con)
+bm = bodymap.eset
+pdata = pData(bm)
+edata = exprs(bm)
+```
+Make an MA-plot of the first sample versus the second sample using the log2 transform (hint: you may have to add 1 first) and the 
+```rlog``` transform from the DESeq2 package. How are the two MA-plots different? Which kind of genes appear most different in each plot?
+* The plots look pretty similar, but the ```rlog``` transform seems to shrink the low abundance genes more. In both cases, the genes in the middle of the expression distribution show the biggest differences.
+* The plots are very different, there are two strong diagonal stripes (corresponding to the zero count genes) in the ```log2``` plot and the high abundance genes are most different, but the low abundance genes seem to show smaller differences with the ```rlog``` transform
+* The plots look pretty similar, but there are two strong diagonal stripes (corresponding to the zero count genes) in the ```rlog``` plot. In both cases, the genes in the middle of the expression distribution show the biggest differences, but the low abundance genes seem to show smaller differences with the ```log2``` transform.
+* The plots look pretty similar, but the ```log2``` plot seems to do a better job of shrinking the low abundance genes toward each other. In both cases, the genes in the middle of the expression distribution show the biggest differences.
+
 
 
 
