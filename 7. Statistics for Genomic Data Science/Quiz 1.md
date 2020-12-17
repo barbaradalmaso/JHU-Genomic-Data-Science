@@ -12,6 +12,10 @@ study may be reproducible, but not replicable?
 * Joe doesn't make the raw data accessible so Susan can't re-run his code.
 * Susan only uses Python and Joe uses R so when she runs a new experiment, she will definitely get different results. 
 * The code and data are available so the study is always replicable if it is reproducible. 
+### Answer
+```
+All the data and code are available but the codebook does not fully explain the experimental design and all protocols for patient recruitment.
+```
 
 ## Question 2
 Put the following code chunk at the top of an R markdown document called
@@ -35,6 +39,10 @@ table(y)
 * The table is random each time you knit the document, but the plot is always the same after you knit it the first time.
 * The plot and table are random the first time you knit the document. They are identical the second time you knit the document. After removing the folders ```test_cache``` and ```test_files``` are still identical.
 * The plot and table are random every time you kint the document, except for the last time.
+### Answer
+```
+The plot is random the first time you knit the document. It is identical to the first time the second time you knit the document. After removing the folders test_cache and test_files they generate new random versions.
+```
 
 ## Question 3
 Create a ```summarizedExperiment``` object with the following code
@@ -55,6 +63,10 @@ Look up the help files for ```summarizedExperiment``` with the code ``?summarize
 * Get the genomic table with <code>assay(se)</code>, get the phenotype table with <code>pData(se)</code>, get the feature data with <code>rowData(se)</code>. <code>rowRanges(se)</code> gives information on the genomic location and structure of the measured features.
 * Get the genomic table with ```assay(se)```, get the phenotype table with 
 ```colData(se)```, get the feature data with ```rowData(se)```. ```rowRanges(se)``` gives the range of possible values for the expression data.
+### Answer
+```
+Get the genomic table with assay(se), get the phenotype table with colData(se), get the feature data with rowRanges(se). rowRanges(se) gives information on the genomic location and structure of the measured
+```
 
 ## Question 4
 Suppose that you have measured ChIP-Seq data from 10 healthy individuals and 10 metastatic cancer patients. For each individual you split the sample into two identical sub-samples and perform the ChIP-Seq experiment on each sub-sample. How can you measure (a) biological variability, (b) technical variability and (c) phenotype variability.
@@ -76,6 +88,12 @@ Suppose that you have measured ChIP-Seq data from 10 healthy individuals and 10 
 *  (a) & (b) By looking at variation across samples from 10 different healthy individuals. 
 
     (c) by comparing the average measurements on the healthy individuals to the measurements on the individuals with cancer. 
+### Answer
+```
+(a) By looking at variation across samples from 10 different individuals with cancer
+(b) By looking at variability between the measurements on the two sub-samples from the same sample and
+(c) By comparing the average measurements on the healthy individuals to the measurements on the individuals with cancer.
+```
 
 ## Question 5
 Load the Bottomly and the Bodymap data sets with the following code:
@@ -97,6 +115,10 @@ Just considering the phenotype data what are some reasons that the Bottomly data
 * The Bottomly data set does not measure the age of the mice.
 * Most of the tissues in the Bodymap data have a consistent number of technical replicates (2).
 * The number of technical replicates in the Bodymap data varies, but the number in the Bottomly data is consistent.
+### Answer
+```
+The covariates in the Bottomly data set (experiment number, lane number) are balanced with respect to strain. The covariates in the Bodymap data set (gender, age, number of technical replicates) are not balanced with respect to tissue.
+```
 
 ## Question 6
 What are some reasons why this plot is not useful for comparing the number of technical replicates by tissue (you may need to install the plotrix package).
@@ -115,6 +137,10 @@ pie3D(pdata_bm$num.tech.reps,labels=pdata_bm$tissue.type)
 * Humans are much worse at comparing angles than comparing position or length.
 * The plot would be much easier to see if the pie chart were rotated by 90 degrees from its current position. 
 * The data could much more easily be shown as a heatmap. 
+### Answer
+```
+The “mixture” category is split across multiple wedges.
+```
 
 ## Question 7
 Load the Bottomly data:
@@ -151,6 +177,14 @@ edata = edata[order(row_sums),]
 index = which(rank(-row_sums) < 500 )
 heatmap(edata[index,],Rowv=NA,Colv=NA)
 ```
+### Answer
+```
+row_sums = rowSums(edata)
+edata = edata[order(-row_sums),]
+index = 1:500
+heatmap(edata[index,],Rowv=NA,Colv=NA)
+```
+![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archive/heatmap1.png)
 
 ## Question 8
 Load the Bodymap data using the following code:
@@ -168,6 +202,12 @@ Make an MA-plot of the first sample versus the second sample using the log2 tran
 * The plots are very different, there are two strong diagonal stripes (corresponding to the zero count genes) in the ```log2``` plot and the high abundance genes are most different, but the low abundance genes seem to show smaller differences with the ```rlog``` transform
 * The plots look pretty similar, but there are two strong diagonal stripes (corresponding to the zero count genes) in the ```rlog``` plot. In both cases, the genes in the middle of the expression distribution show the biggest differences, but the low abundance genes seem to show smaller differences with the ```log2``` transform.
 * The plots look pretty similar, but the ```log2``` plot seems to do a better job of shrinking the low abundance genes toward each other. In both cases, the genes in the middle of the expression distribution show the biggest differences.
+### Answer
+```
+The plots look pretty similar, but the rlog transform seems to shrink the low abundance genes more. In both cases, the genes in the middle of the expression distribution show the biggest differences.
+```
+![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archive/Graph1.png)
+![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archive/Graph2.png)
 
 ## Question 9
 Load the Montgomery and Pickrell eSet:
@@ -193,6 +233,13 @@ How do the methods compare in terms of how well they cluster the data by study? 
 * Clustering is identical with all three approaches and they show equal clustering. The distance is an average over all the dimensions so it doesn't change. 
 * Clustering with or without log2 transform is about the same. Clustering after filtering shows better clustering with respect to the study variable. The reason is that the lowly expressed genes have some extreme outliers that skew the calculation. 
 * Clustering is identical with all three approaches and they show equal clustering. The log2 transform is a monotone transformation so it doesn't affect the clustering.
+### Answer
+```
+Clustering with or without filtering is about the same. Clustering after the log2 transform shows better clustering with respect to the study variable. The likely reason is that the highly skewed distribution doesn't match the Euclidean distance metric being used in the clustering example.
+```
+![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archive/origin.png)
+![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archive/remove%20low%20expression.png)
+![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archive/log2%20transform.png)
 
 ## Question 10
 Load the Montgomery and Pickrell eSet:
@@ -211,3 +258,9 @@ Cluster the samples using k-means clustering after applying the
 * They produce different answers, with hierarchical clustering giving a much more unbalanced clustering. The k-means clustering matches study better. 
 * They produce different answers, with k-means clustering giving a much more unbalanced clustering. The hierarchical clustering matches study better. 
 * They produce the same answers and match the study variable equally well. 
+### Answer
+```
+They produce different answers. The k-means clustering matches study better. Hierarchical clustering would look better if we went farther down the tree but the top split doesn’t perfectly describe the study variable.
+```
+![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archive/matplot.png)
+![alt text](https://github.com/barbaradalmaso/JHU-Genomic-Data-Science/blob/main/7.%20Statistics%20for%20Genomic%20Data%20Science/Archive/cutree.png)
