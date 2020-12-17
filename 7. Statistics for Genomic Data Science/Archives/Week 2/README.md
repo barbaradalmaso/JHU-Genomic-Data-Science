@@ -1,1 +1,3 @@
-Files week 2
+## Statistic for Genomic Data Science
+
+### Week 2 Files
