@@ -9,6 +9,10 @@ Using the paper and the function: ```supportedGenomes()``` in the ```goseq packa
 * UCSC hg18
 * Genome Reference Consortium GRCm38
 * NCBI Build 35
+### Answer
+```
+
+```
 
 ## Question 2
 Load the Bottomly data with the following code and perform a differential expression analysis using 
@@ -32,6 +36,10 @@ edata = log2(edata+1)
 * 223 at FDR 5%; ENSMUSG00000000001 first DE gene
 * 9431 at FDR 5%; ENSMUSG00000027855 first DE gene
 * 90 at FDR 5%; ENSMUSG00000000402 first DE gene
+### Answer
+```
+
+```
 
 ## Question 3
 Use the ```nullp``` and ```goseq``` functions in the ```goseq```
@@ -40,6 +48,10 @@ package to perform a gene ontology analysis. What is the top category that comes
 * GO:0008528
 * GO:0038023
 * GO:0001653
+### Answer
+```
+
+```
 
 ## Question 4
 Look up the GO category that was the top category from the previous question. What is the name of the category? 
@@ -47,6 +59,10 @@ Look up the GO category that was the top category from the previous question. Wh
 * signaling receptor activity
 * transmembrane signaling receptor activity
 * G-protein coupled peptide receptor activity
+### Answer
+```
+
+```
 
 ## Question 5
 Load the Bottomly data with the following code and perform a differential expression analysis using 
@@ -69,3 +85,7 @@ edata = edata[rowMeans(edata) > 5, ]
 * 2
 * 3
 * 5
+### Answer
+```
+
+```
