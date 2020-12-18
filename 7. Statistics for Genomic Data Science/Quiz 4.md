@@ -171,5 +171,5 @@ intersect(GO.top10, GO.top10_adj)
 * 5
 ### Answer
 ```
-3
+2
 ```
