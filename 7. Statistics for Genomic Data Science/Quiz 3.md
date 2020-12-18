@@ -137,7 +137,7 @@ tidy(glm10_dom)
 * The recessive model fits much better since it appears that once you aggregate the heterozygotes and homozygous minor alleles, there is a bigger difference in the proportion of cases and controls. 
 ### Answer
 ```
-* The recessive model shows a strong effect, but the additive model shows no difference so the recessive model is better. 
+The recessive model shows a strong effect, but the additive model shows no difference so the recessive model is better. 
 ```
 
 ## Question 4
@@ -281,7 +281,7 @@ hist(fstats_obj$statistic, col=2)
 * You get different p-values but the same statistic. This is because the F-statistic and t-statistic test the same thing when doing a two group test and one is a transform of the other. 
 ### Answer
 ```
-You get the same p-values and statistics. This is because the F-statistic and t-statistic are the exact same in this case. 
+You get the same p-value but different statistics. This is because the F-statistic and t-statistic test the same thing when doing a two group test and one is a transform of the other.
 ```
 
 ## Question 7
