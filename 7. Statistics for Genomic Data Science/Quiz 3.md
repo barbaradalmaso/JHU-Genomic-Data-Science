@@ -32,6 +32,10 @@ Fit a linear model and a logistic regression model to the data for the 3rd SNP. 
   Logistic Model = 0.18
 
   Both models are fit on the additive scale. So in both cases the coefficient is the decrease in probability associated with each additional copy of the minor allele.
+### Answer
+```
+
+```
 
 ## Question 2
 In the previous question why might the choice of logistic regression be better than the choice of linear regression?
@@ -39,6 +43,10 @@ In the previous question why might the choice of logistic regression be better t
 * If you included more variables it would be possible to get negative estimates for the probability of being a case from the linear model, but this would be prevented with the logistic regression model. 
 * The log odds is always more interpretable than a change in probability on the additive scale. 
 * The logistic regression model is the natural model for GWAS data. 
+### Answer
+```
+
+```
 
 ## Question 3
 Load the example SNP data with the following code:
@@ -56,6 +64,10 @@ Fit a logistic regression model on a recessive (need 2 copies of minor allele to
 * The additive model fits much better since there are fewer parameters to fit and the effect size is so large. 
 * No, in all cases, the fitted values are near 0.5 and there are about an equal number of cases and controls in each group. This is true regardless of whether you fit a recessive or additive model. 
 * The recessive model fits much better since it appears that once you aggregate the heterozygotes and homozygous minor alleles, there is a bigger difference in the proportion of cases and controls. 
+### Answer
+```
+
+```
 
 ## Question 4
 Load the example SNP data with the following code:
@@ -73,6 +85,10 @@ Fit an additive logistic regression model to each SNP. What is the average effec
 * Average effect size =  1.35, minimum =-6.26 , maximum = 6.26
 * Average effect size =  0.007, minimum = -4.25, maximum = 3.90
 * Average effect size =  0.02, minimum = -0.88, maximum = 0.88
+### Answer
+```
+
+```
 
 ## Question 5
 Load the example SNP data with the following code:
@@ -91,6 +107,10 @@ Fit an additive logistic regression model to each SNP and square the coefficient
 * 0.99. They are both testing for the same association using the same additive regression model on the logistic scale. But it doesn't make sense since they should be perfectly correlated. 
 * 0.99. They are both testing for the same association using the same additive regression model on the logistic scale but using slightly different tests. 
 * 0.99. It doesn't make sense since they are both testing for the same association using the same additive regression model on the logistic scale but using slightly different tests. 
+### Answer
+```
+
+```
 
 ## Question 6
 Load the Montgomery and Pickrell eSet:
@@ -108,6 +128,10 @@ Do the log2(data + 1) transform and fit calculate F-statistics for the differenc
 * You get different p-values and statistics. The F-statistic and t-statistic are testing the same thing but do it totally differently. 
 * You get the same p-values and statistics. This is because the F-statistic and t-statistic are the exact same in this case. 
 * You get different p-values but the same statistic. This is because the F-statistic and t-statistic test the same thing when doing a two group test and one is a transform of the other. 
+### Answer
+```
+
+```
 
 ## Question 7
 Load the Montgomery and Pickrell eSet:
@@ -128,6 +152,10 @@ package using the ```DESeq``` function. Then do the log2(data + 1) transform and
 * 0.93. There are more differences for the small statistics. 
 * 0.63. There are more differences for the large statistics.
 * 0.93. There are more differences for the large statistics.
+### Answer
+```
+
+```
 
 ## Question 8
 Apply the Benjamni-Hochberg correction to the P-values from the two previous analyses. How many results are statistically significant at an FDR of 0.05 in each analysis? 
@@ -143,6 +171,10 @@ Apply the Benjamni-Hochberg correction to the P-values from the two previous ana
 * DESeq = 0 significant; 
 
   limma = 0 significant
+### Answer
+```
+
+```
 
 ## Question 9
 Is the number of significant differences surprising for the analysis comparing studies from Question 8? Why or why not? 
@@ -150,6 +182,10 @@ Is the number of significant differences surprising for the analysis comparing s
 * No. There are very few genes different between studies and that is what we would expect. 
 * Yes and no. It is surprising because there is a large fraction of the genes that are significantly different, but it isn't that surprising because we would expect that when comparing measurements from very different batches. 
 * Yes and no. It is surprising because there very few genes that are significantly different, but it isn't that surprising because we would expect that when comparing measurements from very different batches.
+### Answer
+```
+
+```
 
 ## Question 10
 Suppose you observed the following P-values from the comparison of differences between studies. Why might you be suspicious of the analysis? 
@@ -158,3 +194,7 @@ Suppose you observed the following P-values from the comparison of differences b
 * The p-values should be uniformly distributed, but here they are not uniformly distributed. 
 * The p-values should have a spike near zero (the significant results) and be flat to the right hand side (the null results) so the distribution pushed toward one suggests conservative p-value calculation.
 * There are too many small p-values so there are too may statistically significant results. 
+### Answer
+```
+
+```
