@@ -88,9 +88,9 @@ status = subject.support$cc
 Fit an additive logistic regression model to each SNP and square the coefficients. What is the correlation with the results from using 
 ```snp.rhs.tests``` and ```chi.squared?``` Why does this make sense?
 * 0.81 They are both testing for the same association using the same additive regression model on the logistic scale. But it doesn't make sense since they should be perfectly correlated. 
-* > 0.99. They are both testing for the same association using the same additive regression model on the logistic scale. But it doesn't make sense since they should be perfectly correlated. 
-* > 0.99. They are both testing for the same association using the same additive regression model on the logistic scale but using slightly different tests. 
-* > 0.99. It doesn't make sense since they are both testing for the same association using the same additive regression model on the logistic scale but using slightly different tests. 
+* 0.99. They are both testing for the same association using the same additive regression model on the logistic scale. But it doesn't make sense since they should be perfectly correlated. 
+* 0.99. They are both testing for the same association using the same additive regression model on the logistic scale but using slightly different tests. 
+* 0.99. It doesn't make sense since they are both testing for the same association using the same additive regression model on the logistic scale but using slightly different tests. 
 
 ## Question 6
 Load the Montgomery and Pickrell eSet:
