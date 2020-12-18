@@ -276,7 +276,7 @@ Perform the log2(data + 1) transform. Then fit a regression model to each sample
 * The estimated fitted values for all samples for each gene, with the values for each gene stored in the columns of the matrix. 
 ### Answer
 ```
-* The model coefficients for all samples for each gene, with the values for each gene stored in the columns of the matrix. 
+The model coefficients for all samples for each gene, with the values for each gene stored in the columns of the matrix. 
 ```
 
 ## Question 7
@@ -358,7 +358,7 @@ pdata_bm$tissue.type
 * The model doesn't fit well because there are a large number of outliers for the white blood cell tissue. 
 ### Answer
 ```
-Since ```tissue.type``` is a factor variable with many levels, this model has more coefficients to estimate per gene (18) than data points per gene (16).
+Since tissue.type is a factor variable with many levels, this model has more coefficients to estimate per gene (18) than data points per gene (16).
 ```
 
 ## Question 9
