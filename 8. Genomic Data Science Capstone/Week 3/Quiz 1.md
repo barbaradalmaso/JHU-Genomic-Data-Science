@@ -22,6 +22,11 @@ How many samples did they sequence?
 * 16 samples
 * 110 samples
 
+### Answer
+```
+72 samples
+```
+
 ## Question 3
 How many of these samples were deposited on the Short Read Archive?
 * 72 samples
@@ -29,6 +34,11 @@ How many of these samples were deposited on the Short Read Archive?
 * 36 samples
 * 6 samples
 * 110 samples
+
+### Answer
+```
+36 samples
+```
 
 ## Question 4
 How many age groups were included in the study?
@@ -38,12 +48,22 @@ How many age groups were included in the study?
 * 10 age groups
 * 5 age groups
 
+### Answer
+```
+6 age groups
+```
+
 ## Question 5
 At what level did they summarize the data?
 * Expressed Regions
 * Genes
-* Transcripts
+* Transcripts 
 * Exons
+
+### Answer
+```
+Expressed Regions
+```
 
 ## Question 6
 What differences were they looking for in their analysis
@@ -53,6 +73,11 @@ What differences were they looking for in their analysis
 * Differences associated with RNA quality (RIN)
 * Differences between brain and kidney
 
+### Answer
+```
+Differences associated with age
+```
+
 ## Question 7
 Where can you get the raw data?
 * At the authors’ website
@@ -61,6 +86,11 @@ Where can you get the raw data?
 * The Short Read Archive (SRA)
 * On Amazon S3
 
+### Answer
+```
+The Short Read Archive (SRA)
+```
+
 ## Question 8
 What do you expect the raw data to be? 
 * FASTA files
@@ -68,6 +98,11 @@ What do you expect the raw data to be?
 * CSV files
 * FASTQ files
 * Image files
+
+### Answer
+```
+FASTQ files
+```
 
 ## Question 9
 Which of the following were steps in the analysis pipeline they used for the RNA-seq data?
@@ -79,3 +114,13 @@ Which of the following were steps in the analysis pipeline they used for the RNA
 * Alignment of reads to known transcripts
 * Identification of expressed regions using an analysis of coverage
 * Alignment of reads to the genome
+
+### Answer
+```
+Identification of differentially expressed regions
+Alignment of reads to known transcripts
+Alignment of reads to the genome
+Spliced alignment of reads to the genome
+Identification of differentially expressed genes based on known annotation
+
+```
