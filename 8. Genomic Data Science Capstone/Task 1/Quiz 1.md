@@ -118,9 +118,11 @@ Which of the following were steps in the analysis pipeline they used for the RNA
 ### Answer
 ```
 Identification of differentially expressed regions
-Alignment of reads to known transcripts
-Alignment of reads to the genome
-Spliced alignment of reads to the genome
-Identification of differentially expressed genes based on known annotation
 
-```
+Alignment of reads to known transcripts
+
+Alignment of reads to the genome
+
+Spliced alignment of reads to the genome
+
+Identification of differentially expressed genes based on known annotation
