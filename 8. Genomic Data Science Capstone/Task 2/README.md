@@ -1,4 +1,4 @@
-# About this Assingment
+# Peer-graded Assignment: Alignment
 
 ## Instructions
 
