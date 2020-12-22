@@ -1,4 +1,4 @@
-# About this Assignment
+# Peer-graded Assignment: QC the Alignment
 
 ## Instructions
 Now you have aligned the data, the next step is to do some quality control to make sure that the data are in good shape. 
